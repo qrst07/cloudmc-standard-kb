@@ -3,6 +3,26 @@ title: "Create Site to Site IPsec VPN endpoint on a VPC"
 slug: create-site-to-site-vpn-on-vpc
 ---
 
+# Rough environment
+Env name: dmz
+VPC CIDR: 10.0.0.0/22
+VPN source NAT IP: 172.30.200.106
+
+Env name: management
+VPC CIDR: 10.0.4.0/22
+VPN source NAT IP: 172.30.200.107
+
+# Rough procedure
+1. Go to *Networking* tab
+1. Click on the gear menu for *Site-to-site VPNs*
+1. Click on *Add site-to-site VPN* button in upper right of page
+1. Enter the details for the tunnel from dmz to management
+   - 
+
+
+
+# Below here is the old article
+
 # Create Site to Site IPsec VPN endpoint on a VPC
 
 Site to Site IPsec VPN is useful to interconnect a VPC to a Remote office, another data-center or two VPCs together.
