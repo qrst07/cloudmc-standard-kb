@@ -32,7 +32,7 @@ The following example illustrates how to connect two VPCs with a site-to-site VP
 1. Go to **mgt-env** environment and repeat steps 2 though 4.
 1. Enter the details for the tunnel from **management** to **dmz**:
    - **Name:** Tunnel to dmz
-   - **emote public IP:** 172.30.200.106
+   - **Remote public IP:** 172.30.200.106
    - **Remote CIDR:** 10.0.0.0/22
    - **IPSec pre-shared key:** Uj2nzrTQ7xkbgun3ZqVFPbyxr9wfQzXZG5ZJ
    - **Dead peer detection:** Enabled
