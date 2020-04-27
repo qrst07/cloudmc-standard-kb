@@ -40,4 +40,4 @@ L'exemple suivant illustre comment à connecter deux VPCs avec un site-à-site V
    - **Connexion passive :** Désactivée
    - Laisser les valeurs par défaut pour les autres options.
 1. Cliquer *Valider*.
-1. La liste des VPNs site-à-site maintenant énumère **Tunnel à dmz**.  L'état va dire **Connecté**.  À l'autre côté, la listed des VPNs site-à-site dans **dmz-env** aura une entrée, "Tunnel vers gestion", et va dire **Connecté**.
+1. La liste des VPNs site-à-site maintenant énumère **Tunnel à dmz**.  L'état va dire **Connecté**.  À l'autre côté, la listed des VPNs site-à-site dans **dmz-env** aura une entrée,**Tunnel vers gestion**, et va dire **Connecté**.
