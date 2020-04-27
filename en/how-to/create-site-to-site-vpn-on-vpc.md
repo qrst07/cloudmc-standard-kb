@@ -39,5 +39,5 @@ The following example illustrates how to connect two VPCs with a site-to-site VP
    - **Force encapsulation:** Disabled
    - **Passive connection:** Disabled
    - Accept defaults for all other tunnel options
-   1. Click *Submit*
+1. Click *Submit*
 1. The list of Site-to-site VPNs now lists **Tunnel to dmz**.  The status will say **Connected**.
