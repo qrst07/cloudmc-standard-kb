@@ -18,7 +18,7 @@ The following example illustrates how to connect two VPCs with a site-to-site VP
 1. Go to **dmz-env** environment.
 1. Go to *Networking* tab.
 1. Click on the gear menu for *Site-to-site VPNs*.
-1. Click on *Add site-to-site VPN* button in upper right of page.
+1. Click on *Add site-to-site VPN*.
 1. Enter the details for the tunnel from **dmz** to **management**:
    - **Name:** Tunnel to management
    - **Remote public IP:** 172.30.200.107
@@ -32,12 +32,12 @@ The following example illustrates how to connect two VPCs with a site-to-site VP
 1. Go to **mgt-env** environment and repeat steps 2 though 4.
 1. Enter the details for the tunnel from **management** to **dmz**:
    - **Name:** Tunnel to dmz
-   - **emote public IP:** 172.30.200.106
+   - **Remote public IP:** 172.30.200.106
    - **Remote CIDR:** 10.0.0.0/22
    - **IPSec pre-shared key:** Uj2nzrTQ7xkbgun3ZqVFPbyxr9wfQzXZG5ZJ
    - **Dead peer detection:** Enabled
    - **Force encapsulation:** Disabled
    - **Passive connection:** Disabled
    - Accept defaults for all other tunnel options
-   1. Click *Submit*
-1. The list of Site-to-site VPNs now lists **Tunnel to dmz**.  The status will say **Connected**.
+1. Click *Submit*
+1. The list of site-to-site VPNs now lists **Tunnel to dmz**.  The status will say **Connected**.  On the other side of the VPN, the list of site-to-site VPNs in **dmz-env** will have an entry, "Tunnel to management", and will say **Connected**.
