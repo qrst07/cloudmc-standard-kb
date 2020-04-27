@@ -9,13 +9,13 @@ A site-to-site VPN is useful for interconnecting a VPC to a remote office, anoth
 The following example illustrates how to connect two VPCs with a site-to-site VPN.  Details will vary for your particular devices.
 
 #### Example VPC details
-| VPC name | VPC CIDR | Source NAT IP |
-| --- | --- | --- |
-| dmz | 10.0.0.0/22 | 172.30.200.106 |
-| management | 10.0.4.0/22 | 172.30.200.107 |
+| VPC name | Environment name | VPC CIDR | Source NAT IP |
+| --- | --- | --- | --- |
+| dmz | dmz-env | 10.0.0.0/22 | 172.30.200.106 |
+| management | mgt-env| 10.0.4.0/22 | 172.30.200.107 |
 
 #### Site-to-site VPN configuration
-1. Go to **dmz** environment.
+1. Go to **dmz-env** environment.
 1. Go to *Networking* tab.
 1. Click on the gear menu for *Site-to-site VPNs*.
 1. Click on *Add site-to-site VPN* button in upper right of page.
@@ -29,7 +29,7 @@ The following example illustrates how to connect two VPCs with a site-to-site VP
    - **Passive connection:** Enabled
    - Accept defaults for all other tunnel options.
 1. Click *Submit*
-1. Go to **management** environment and repeat steps 2 though 4.
+1. Go to **mgt-env** environment and repeat steps 2 though 4.
 1. Enter the details for the tunnel from **management** to **dmz**:
    - **Name:** Tunnel to dmz
    - **emote public IP:** 172.30.200.106

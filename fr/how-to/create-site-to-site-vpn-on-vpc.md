@@ -9,17 +9,17 @@ Un VPN site-à-site est utile pour interconnecter un VPC à un bureau à distanc
 L'exemple suivant illustre comment à connecter deux VPCs avec un site-à-site VPN.  Les détails varient selon vos appareils.
 
 #### Détails pour les VPCs d'exemple
-| Nom de l'environnement | CIDR du VPC | IP NAT source |
-| --- | --- | --- |
-| dmz | 10.0.0.0/22 | 172.30.200.106 |
-| gestion | 10.0.4.0/22 | 172.30.200.107 |
+| Nom du VPC | Nom de l'environnement | CIDR du VPC | IP NAT source |
+| --- | --- | --- | --- |
+| dmz | env-dmz | 10.0.0.0/22 | 172.30.200.106 |
+| gestion | env-gest | 10.0.4.0/22 | 172.30.200.107 |
 
 #### Configuration du VPN site-à-site
 1. Aller à l'environnement **dmz**.
 1. Cliquer sur l'onglet *Réseautique*.
 1. Cliquer sur l'icône d'engrenage pour *VPNs site-à-site*.
 1. Cliquer sur *Ajouter VPN site-à-site*.
-1. Saisir les détails du tunnel de **dmz** au **gestion*.
+1. Saisir les détails du tunnel de **dmz** au *gestion*.
    - **Nom :** Tunnel au gestion
    - **Adresse IP distant :** 172.30.200.107
    - **CIDR distant :** 10.0.4.0/22
