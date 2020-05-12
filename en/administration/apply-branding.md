@@ -4,26 +4,29 @@ slug: apply-branding
 ---
 
 
-Doc spec:
+The CloudMC Web user interface is designed to easily align with your corporate branding.  Brand management in CloudMC allows an Operator, a Reseller, or someone with the **Branding: Manage** permission to:
+   - Override the default colours for the interface
+   - Select the available and default languages
+   - Change the logo on the login page, in the side menu, and the favicon
+   - Define the application name presented by the browser
 
-# Document specification:  Apply branding article
+Each organization can apply its own branding, and a **default branding** can be created for all organizations if desired.
 
-- **Overview:**  KB article to demonstrate the branding feature
+Additionally, advanced users can apply custom CSS settings to modify the appearance of specific user interface elements.
 
-- **Description of target audience:**  CloudMC Operators and Resellers
+### Branding hierarchy
 
-- **Languages:**  English, French, and Spanish
+CloudMC ships with factory branding.  This cannot be modified or deleted.  Creating a branding within the System organization creates
 
-- **Non-goals:**
+   - Note that the system branding is a special case, only an operator or someone will **Branding: Manage** scoped to all organizations can manage the branding for System.
 
-- **Estimated length:** Single article
+### Defining branding
 
-- **Finer points:**  Will cover adding colours and custom CSS.  Cover normal mode vs advanced mode.  Will have screenshots with arrows pointing to elements that have the different shades, eg, primary-light, primary, secondary, secondary-dark, etc.  Will likely have a black-and-white or greyscale one, plus another with CloudOps colours.
+All functionality related to branding is found on the *Administration* -> *Branding* page.
 
-- **Outline of document:**
+#### Application name
+#### Logo
+#### Colours
+#### Languages
 
-- **Reviewers and their responsibilities:**  Evan
-
-- **Outstanding issues:**
-
-- **Schedule:**  ASAP
+### Advanced CSS
