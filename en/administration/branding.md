@@ -1,6 +1,6 @@
 ---
-title: "Apply branding"
-slug: apply-branding
+title: "Brand management"
+slug: branding
 ---
 
 
