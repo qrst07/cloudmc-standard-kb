@@ -28,7 +28,7 @@ All functionality related to branding is found on the *Administration* -> *Brand
 
 #### Logo
 
-#### Colours {#colours}
+#### Colours <a name="colours"></a>
 
 #### Languages
 
