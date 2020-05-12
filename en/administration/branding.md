@@ -25,8 +25,11 @@ CloudMC ships with factory branding.  This cannot be modified or deleted.  Creat
 All functionality related to branding is found on the *Administration* -> *Branding* page.
 
 #### Application name
+
 #### Logo
-#### Colours
+
+#### Colours {#colours}
+
 #### Languages
 
 ### Advanced CSS
