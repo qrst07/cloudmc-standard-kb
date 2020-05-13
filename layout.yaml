@@ -61,3 +61,4 @@ categories:
       - cca-client-config-ubuntu.md
 - category: very-long-name
   articles:
+      - very-long-name.md
