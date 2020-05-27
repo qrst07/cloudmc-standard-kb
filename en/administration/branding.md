@@ -4,7 +4,7 @@ slug: branding
 ---
 
 
-The CloudMC Web user interface is designed to easily align with your corporate branding.  Brand management in CloudMC allows an Operator, a Reseller, or someone with the **Branding: Manage** permission to:
+The CloudMC Web user interface is designed to easily align with your corporate branding.  Brand management in CloudMC allows an Operator, a Reseller, or someone with the *Branding: Manage* permission to:
    - Override the default colours for the interface
    - Select the available and default languages
    - Change the logo on the login page, in the side menu, and the favicon
@@ -12,24 +12,42 @@ The CloudMC Web user interface is designed to easily align with your corporate b
 
 Each organization can apply its own branding, and a **default branding** can be created for all organizations if desired.
 
-Additionally, advanced users can apply custom CSS settings to modify the appearance of specific user interface elements.
+Additionally, advanced users can apply custom CSS settings to modify the appearance of specific user interface components.  This article does not cover advanced mode.
 
 ### Branding hierarchy
 
-CloudMC ships with factory branding.  This cannot be modified or deleted.  Creating a branding within the System organization creates
+CloudMC ships with factory branding.  This cannot be modified or deleted.  Creating a new branding within the System organization creates a **default branding**.  Upon creation, the branding will be listed with the "Default" badge on the *Branding* page.  Once the default branding has been saved,
 
-   - Note that the system branding is a special case, only an operator or someone will **Branding: Manage** scoped to all organizations can manage the branding for System.
+   - Note: System branding is a special case, only an operator or account with *Branding: Manage* scoped to all organizations can manage the branding for System.
 
 ### Defining branding
 
-All functionality related to branding is found on the *Administration* -> *Branding* page.
+All functionality related to branding is found on the *Administration* -> *Branding* page.  This item is visible in the sidebar only when the user account has the *Branding: Manage* permission scoped for the current organization.
 
 #### Application name
 
+String displayed in the browser window title bar or name of tab.  Also appears in email templates.
+
 #### Logo
+
+Two logos:
+   - Small, square logo: Mini side menu and favicon
+   - Large, rectangular logo: login page, side menu, email notifications
 
 #### Colours <a name="colours"></a>
 
+Colours are managed through defined CSS variables.  The following variables govern the core set of colours used throughout the CloudMC interface.  Note that colour values are expressed in hexadecimal format.
+
+   - secondary: Larger area of unselected side menu
+   - secondary-light: Inner are of selected side menu
+   - primary-dark: Selected UI elements such as the side menu, and the top bar
+   - primary-light: not really seen
+   - primary: Small highlights, selectors
+
+Should I mention dependencies between colours?
+
 #### Languages
+
+Use the pop-up menu labeled *Languages* to select one or more languages to be available to your users, and use the pop-up menu labeled *Default language* to choose the language which will be displayed for the login page.
 
 ### Advanced CSS
