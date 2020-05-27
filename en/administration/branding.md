@@ -36,13 +36,19 @@ CloudMC has support for two types of logos:
 
 #### Colours <a name="colours"></a>
 
-Colours are managed through defined CSS variables.  The following variables govern the core set of colours used throughout the CloudMC interface.  Note that colour values are expressed in hexadecimal format.
+Colours are managed through defined CSS variables.  The following variables govern the core set of colours used throughout the CloudMC interface:
 
    - **secondary**: Larger area of unselected side menu
    - **secondary-light**: Inner area of selected side menu
    - **primary-dark**: Selected UI elements such as the side menu, and the top bar
    - **primary-light**: Minor UI highlights
    - **primary**: Small highlights, selectors
+
+The *Branding* page has a text box for defining the values of one or more of these variables.  Colours are expressed as hexadecimal values in the following format:
+
+```
+--secondary: #005D91;
+```
 
 #### Languages
 
