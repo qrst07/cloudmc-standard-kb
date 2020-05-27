@@ -26,28 +26,24 @@ All functionality related to branding is found on the *Administration* -> *Brand
 
 #### Application name
 
-String displayed in the browser window title bar or name of tab.  Also appears in email templates.
+The is the string displayed in the browser window title bar or name of tab.  It also appears in email templates.
 
 #### Logo
 
-Two logos:
-   - Small, square logo: Mini side menu and favicon
-   - Large, rectangular logo: login page, side menu, email notifications
+CloudMC has support for two types of logos:
+   - Small, square logo: Used on the miniature side menu and favicon
+   - Large, rectangular logo: Used on the login page, side menu, and email notifications
 
 #### Colours <a name="colours"></a>
 
 Colours are managed through defined CSS variables.  The following variables govern the core set of colours used throughout the CloudMC interface.  Note that colour values are expressed in hexadecimal format.
 
-   - secondary: Larger area of unselected side menu
-   - secondary-light: Inner are of selected side menu
-   - primary-dark: Selected UI elements such as the side menu, and the top bar
-   - primary-light: not really seen
-   - primary: Small highlights, selectors
-
-Should I mention dependencies between colours?
+   - **secondary**: Larger area of unselected side menu
+   - **secondary-light**: Inner area of selected side menu
+   - **primary-dark**: Selected UI elements such as the side menu, and the top bar
+   - **primary-light**: Minor UI highlights
+   - **primary**: Small highlights, selectors
 
 #### Languages
 
-Use the pop-up menu labeled *Languages* to select one or more languages to be available to your users, and use the pop-up menu labeled *Default language* to choose the language which will be displayed for the login page.
-
-### Advanced CSS
+Use the pop-up menu labeled *Languages* to select one or more languages to be available to your users.  Use the pop-up menu labeled *Default language* to choose the language which will be displayed for the login page.
