@@ -16,6 +16,6 @@ To check your current **System role(s)**, do the following:
 
 ![Preference edit page](/assets/preferences-edit-en.jpeg)
 
-By default, cloud.ca provides two basic system roles ( Organization Admin and End-User). If you require a more granular security model, you can create more roles, using any combination of permissions. You can then select multiple roles for any given user, wher" the result is the union of all permissions of the different roles.
+By default, CloudMC provides two basic system roles ( Organization Admin and End-User). If you require a more granular security model, you can create more roles, using any combination of permissions. You can then select multiple roles for any given user, wher" the result is the union of all permissions of the different roles.
 
 To prevent role escalation, a user who has the Users update permission can only assign roles that he possesses himself.

@@ -7,11 +7,11 @@ This operating system provides a native IKEv2 VPN client. Here are the steps to 
 
 #### Install the certificate
 
-1. Double click on the certificate you downloaded and saved on your computer (for ex: **cloudca-vpn.crt**) and add it to your **login** keychain.
+1. Double click on the certificate you downloaded and saved on your computer (for ex: **cloudmc-vpn.crt**) and add it to your **login** keychain.
    ![Add certificate](/assets/Mac-1-Add-Certificate.png)
 1. Open the *Keychain Access* application: *Finder > Applications > Utilities > Keychain Access.app*
 1. Click **login** on the left side, then on *Certificates* on the bottom left.
-1. In the search box at the top right of the Keychain Access window, search for "Cloud.ca" to locate the **Cloud.ca VPN System CA** certificate.
+1. In the search box at the top right of the Keychain Access window, search for the certificate you just added.
    ![Keychain Access](/assets/Mac-2-Keychain.png)
 1. Double click on the certificate, and in the first dropdown box that reads *IP Security (IPsec)*, select **Always Trust**. You can now close the window.
    ![Always trust this certificate](/assets/Mac-3-Always-Trust.png)
@@ -23,7 +23,7 @@ This operating system provides a native IKEv2 VPN client. Here are the steps to 
 1. Click on **+** button to add a VPN
    - **Interface:** VPN
    - **VPN Type:** IKEv2
-   - **Service Name:** a name for your VPN connection (e.g.: cloud.ca-vpn)
+   - **Service Name:** a name for your VPN connection (e.g.: cloudmc-vpn)
    ![Add VPN](/assets/Mac-4-Add-VPN.png)
 1. From the left, select the connection you just created and enter the following details.
    - **Server:** Public IP address
