@@ -17,7 +17,7 @@ Pour une entrée en matière à propos des VPCs, veuillez vous référer à l'[a
 1. Complétez le formulaire d'ajout de VPC :
    1. **Nom :** Nom du VPC (ex. prod-vpc1)
    1. **Description :** Description du VPC (ex. Production site A)
-   1. **Zone :** le nom de la zone dans cloud.ca où vous voulez déployer votre VPC (ex. QC-1)
+   1. **Zone :** le nom de la zone dans CloudMC où vous voulez déployer votre VPC (ex. QC-1)
    1. **CIDR :** Sous-réseau assigné à votre VPC. Présentement non-éditable.
    1. **Domaine Réseau :** Nom de domaine pour vos instances.
    1. **L’offre de VPC :** Choisissez le niveau de service pour ce VPC:
@@ -52,7 +52,7 @@ Un VPN site-à-site permet l’interconnection:
    - De votre bureau vers le VPC
    - D’un autre fournisseur vers votre VPC
 
-La configuration d’un VPN site-à-site est présentement indisponible sur le portail d’administration de cloud.ca. Si vous avez besoin d’une telle configuration, contactez l'équipe de support de cloud.ca, qui sera en mesure de vous aider.
+La configuration d’un VPN site-à-site est présentement indisponible sur le portail d’administration de CloudMC. Si vous avez besoin d’une telle configuration, contactez l'équipe de support de CloudMC, qui sera en mesure de vous aider.
 
 ##### Considérations :
 

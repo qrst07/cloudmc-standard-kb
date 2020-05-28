@@ -16,6 +16,6 @@ Pour vérifier votre/vos rôles actuels, procédez comme suit:
 
 ![Page Préférences](/assets/preferences-edit-fr.png)
 
-Par défaut cloud.ca fourni deux rôles de base (Organization Admin et End-user). Si vous avez besoin de davantage de granularité au niveau du modèle de sécurité, vous pouvez créer de nouveaux rôles en utilisant n’importe quelle combinaison de permissions. Vous pouvez ensuite sélectionner les rôles appropriés pour chacun de vos utilisateurs, où le résultat effectif sera l’union des permissions des rôles choisis.
+Par défaut CloudMC fourni deux rôles de base (Organization Admin et End-user). Si vous avez besoin de davantage de granularité au niveau du modèle de sécurité, vous pouvez créer de nouveaux rôles en utilisant n’importe quelle combinaison de permissions. Vous pouvez ensuite sélectionner les rôles appropriés pour chacun de vos utilisateurs, où le résultat effectif sera l’union des permissions des rôles choisis.
 
 Pour se prémunir contre les élévations de privilèges, un utilisateur possédant la permission Modifier utilisateur n’a que le droit d’assigner à autrui les roles qu’il possède lui-même.
