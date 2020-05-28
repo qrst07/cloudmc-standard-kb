@@ -43,6 +43,9 @@ categories:
       - restrict-user-access.md
       - branding.md
       - manage-users.md
+      - rbac.md
+      - rbac-use-cases-basic.md
+      - rbac-use-cases-advanced.md
 - category: how-to
   articles:
       - create-site-to-site-vpn-on-vpc.md
