@@ -6,7 +6,7 @@ slug: gestion-des-modeles
 
 ### Créer un modèle à partir d'une instance existante
 
-Cette section présente comment créer un modèle à partir d'une instance existante en production sur cloud.ca. Ce processus requiert d'abord qu'une copie instantanée du volume soit effectuée.
+Cette section présente comment créer un modèle à partir d'une instance existante en production sur CloudMC. Ce processus requiert d'abord qu'une copie instantanée du volume soit effectuée.
 
 #### Effectuer une copie instantanée initiale d'un volume
 
@@ -43,7 +43,7 @@ Cliquez sur **Terminer**. Vous devriez recevoir un message de confirmation que l
 
 ### Importer son propre modèle
 
-cloud.ca offre la possibilité aux usagers d'importer leurs propres modèles créés à l'extérieur de la plateforme. Ce processus est décrit dans cette section.
+CloudMC offre la possibilité aux usagers d'importer leurs propres modèles créés à l'extérieur de la plateforme. Ce processus est décrit dans cette section.
 
 Premièrement, vous devez cliquez sur le bouton **Importer**. Une nouvelle fenêtre contextuelle va apparaître comme dans l'image suivante.
 
@@ -53,7 +53,7 @@ Tous les champs sont obligatoires. Voici une description de chacun d'eux :
 
 - **Nom :** Ceci est le nom qui sera affiché dans la liste des modèles et dans l'outils de création d'instance.
 - **Description :** Vous pouvez ajouter plus d'informations dans ce champs.
-- **URL d'imporation :** Vous ne téléverser pas des modèles vers cloud.ca, cloud.ca va le télécharger pour vous. Dans cette optique, vous devez fournir un **URL accessible publiquement** vers votre VHD en utilisant soit **HTTP** ou **FTP**. **Notez:** HTTPS ne fonctionnera pas.
+- **URL d'imporation :** Vous ne téléverser pas des modèles vers CloudMC, CloudMC va le télécharger pour vous. Dans cette optique, vous devez fournir un **URL accessible publiquement** vers votre VHD en utilisant soit **HTTP** ou **FTP**. **Notez:** HTTPS ne fonctionnera pas.
 - **Hyperviseur :** Ceci sera toujours XenServer dans notre cas, du moins pour le moment.
 - **Format :** Ceci sera toujours VHD dans notre cas, du moins pour le moment.
 - **Système d'exploitation :** Fournir le type de système d'exploitation pour votre modèle. Par exemple, si vous avez installé Ubuntu 14.04 avec PVHVM, vous devrez selectionner **Other (64 bit)**. Si vous avez installé CentOS 6 en PV, vous devrez utiliser **CentOS 6.4 (64 bit)**. Une table est disponible plus bas pour facilité votre choix.
@@ -64,7 +64,7 @@ Tous les champs sont obligatoires. Voici une description de chacun d'eux :
 
 ### Concordance des systèmes d'exploitation
 
-| Système d'exploitation du modèle | Système d'exploitation pour cloud.ca |
+| Système d'exploitation du modèle | Système d'exploitation pour CloudMC |
 | --- | --- |
 | CentOS 6.x | CentOS 6.4 (32/64 bit) |
 | CentOS 7.x | Other (64 bit) |

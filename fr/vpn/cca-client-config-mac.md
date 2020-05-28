@@ -7,11 +7,11 @@ Ce système d'exploitation offre une client IKEv2 natif. Voici les étapes pour 
 
 #### Autoriser le certificat
 
-1. Faire un double-clic sur le certificat que vous avez téléchargé et enregistré sur votre ordinateur (par exemple: **cloudca-vpn.crt**) et ajouter-le dans votre trousseau **session**.
+1. Faire un double-clic sur le certificat que vous avez téléchargé et enregistré sur votre ordinateur (par exemple: **cloudmc-vpn.crt**) et ajouter-le dans votre trousseau **session**.
    ![Add Certificate](/assets/Mac-1-Add-Certificate.png)
 1. Ouvrir l'application *Trousseaux d’accès* : *Finder > Applications > Utilitaires > Trousseaux d’accès.app*
 1. Cliquer sur **session** à gauche et sur *Certificats* en bas à gauche.
-1. Dans la boîte de recherche en haut à droite de la fenêtre du Trousseaux d’accès, rechercher "Cloud.ca" pour trouver le certificat "Cloud.ca VPN System CA".
+1. Dans la boîte de recherche en haut à droite de la fenêtre du Trousseaux d’accès, rechercher le certificat que vous venez d'ajouter.
    ![Keychain Access](/assets/Mac-2-Keychain.png)
 1. Faire un double-clic sur le certificat et sélectionner **Toujours approuver** dans le premier menu déroulant intitulé *Sécurité IP (IPsec)*. Vous pouvez maintenant fermer la fenêtre.
    ![Always trust this certificate](/assets/Mac-3-Always-Trust.png)
@@ -22,7 +22,7 @@ Ce système d'exploitation offre une client IKEv2 natif. Voici les étapes pour 
 1. Cliquer sur le bouton **+** pour ajouter un VPN:
    - **Interface:** VPN
    - **Type de VPN:** IKEv2
-   - **Nom du service:** un nom pour la connexion VPN (e.g.: cloud.ca-vpn)
+   - **Nom du service:** un nom pour la connexion VPN (e.g.: cloudmc-vpn)
    ![Add VPN](/assets/Mac-4-Add-VPN.png)
 1. À gauche, sélectionner la connexion que vous venez de créer et entres les détails suivants:
    - **Adresse du serveur:** Adresse IP publique
