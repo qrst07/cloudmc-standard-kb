@@ -1,6 +1,6 @@
 categories:
 - category: general
-  icon: info-circle
+  icon: fa info-circle
   articles:
       - cloud.ca-in-a-nutshell.md
       - 10-noteworthy-improvements-in-the-new-cloud-ca-portal.md
