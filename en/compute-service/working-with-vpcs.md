@@ -17,7 +17,7 @@ For basic information about VPCs, refer to this [article](what-is-a-vpc.md).
 1. Fill the Add VPC form:
    1. **Name:** Name of the VPC (ex: prod-vpc1)
    1. **Description:** Description of the VPC (ex: Production network site A)
-   1. **Zone:** cloud.ca zone name where to deploy the VPC (defaul: QC-1)
+   1. **Zone:** CloudMC zone name where to deploy the VPC (defaul: QC-1)
    1. **CIDR:** Randomly generate private subnet. Cannot be edited.
    1. **Network Domain:** Domain Name (optional).
    1. **VPC Offering:** Choose the Service Level of this VPC
@@ -50,7 +50,6 @@ Site-to-site VPN offers capability to interconnect:
 - Office to VPC
 - Other Cloud provider to VPC
 
-Site-to-Site VPNs management is currently not available via cloud.ca portal. If you need VPN connectivity contact cloud.ca support who will provide help on setting it up.
 
 ##### Considerations:
 

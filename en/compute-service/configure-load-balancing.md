@@ -4,7 +4,7 @@ slug: configure-load-balancing
 ---
 
 
-Load balancing provides a way to distribute workloads across multiple compute resources. This usually increases performance and availability through redundancy. In the context of cloud.ca, this is achieved by associating load-balancing rules to a VPC's public IP address.
+Load balancing provides a way to distribute workloads across multiple compute resources. This usually increases performance and availability through redundancy. In the context of CloudMC, this is achieved by associating load-balancing rules to a VPC's public IP address.
 
 **Note:** You cannot configure load balancing rules on a public IP address already being used for Source NAT, VPN or Port Forwarding. Furthermore, only a single tier within a VPC can have public IP addresses dedicated to load-balancing.
 
