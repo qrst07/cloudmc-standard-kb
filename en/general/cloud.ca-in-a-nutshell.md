@@ -9,8 +9,8 @@ CloudMC is a cloud edge orchestration platform. It delivers scalable, secure, hi
 
 ### Why CloudMC?
 
-- **Speed your innovation** − On demand, self-service platform for DevOps, with complete API automation for continuous delivery
-- **Usage and cost transparency** − Granular metering and reporting make governance without bureaucracy possible
+- **Speed your innovation**  − On demand, self-service platform for DevOps, with complete API automation for continuous delivery
+- **Usage and cost transparency**  − Granular metering and reporting make governance without bureaucracy possible
 
 ### Advantages
 
@@ -25,10 +25,3 @@ For transparency:
 - **Utility billing** (hourly rates)
 - **Detailed usage reporting** by environment
 - **Governance capabilities** (RBAC, budgets, quotas, etc.)
-
-
-Mission critical:
-
-- **Virtual private cloud** with segregated resource allocation
-- **Tiered storage** SSD block storage allowing for provisioned IOPS workloads (databases, VDI)
-- **Advanced network offerings** including VPN, firewall and enterprise load-balancer (ADC with advanced Layer-7 features)
