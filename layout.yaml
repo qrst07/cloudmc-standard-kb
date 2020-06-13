@@ -18,6 +18,7 @@ categories:
   icon: fa fa-cloud
   articles:
       - working-with-instances.md
+      - gcp-working-with-instances.md
       - add-storage-to-instance.md
       - working-with-ssh-keys.md
       - configure-load-balancing.md
