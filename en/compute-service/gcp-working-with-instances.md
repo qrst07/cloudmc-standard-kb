@@ -13,7 +13,7 @@ To access instances, navigate to your GCP environment and click on the **Compute
 1. Click on *Add instance*.
 1. On the *Add instance* page, enter the required details for the desired instance.  The estimated hourly and monthly costs will appear on the right hand side.
 1. You may choose to allow HTTP (port 80) or HTTPS (port 443) traffic, or both.  This will create a firewall rule allowing the selected traffic to this VM.
-1. You may choose to attach an public IP to the instance using the **Attach external IP** pop-up menu.
+1. You may choose to attach a public IP to the instance using the **Attach external IP** pop-up menu.
    - **None:**  Your instance will not have a public IP.
    - **New ephemeral IP:**  Your instance will be assigned a new public IP every time it boots.
    - **New static IP:**  A public IP will be reserved specifically for this instance, and will be the same every time it boots.
