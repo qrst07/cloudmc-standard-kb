@@ -17,7 +17,7 @@ To access instances, navigate to your GCP environment and click on the **Compute
    - **None:**  Your instance will not have a public IP.
    - **New ephemeral IP:**  Your instance will be assigned a new public IP every time it boots.
    - **New static IP:**  A public IP will be reserved specifically for this instance, and will be the same every time it boots.
-1. You may choose to specify a startup shell script to be executed every time the instance boots.  Enter the desired startup script in the text box labeled **Automation - Startup script**.
+1. You may choose to specify a startup script to be executed every time the instance boots.  Enter the desired startup script in the text box labeled **Automation - Startup script**. For instances running Unix-based operating systems, this can be a shell script, and for Windows instances this can be a metadata key, where the value is the desired batch commands or PowerShell commands.
 
 ### Stop a running instance
 
