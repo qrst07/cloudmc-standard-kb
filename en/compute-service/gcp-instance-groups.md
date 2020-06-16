@@ -8,7 +8,7 @@ slug: gcp-instance-groups
 
 To create, modify, or delete an instance group, an account with the *User* role must be a member of the environment which contains the instance, and also have the *Editor* or *Owner* environment role assigned.  An account with the *Administrator* role or higher may create, modify, or delete instance groups in an environment.
 
-To manage instance groups, navigate to the desired GCP environment, click on the *Compute* tab, and then click on *Instance groups*.
+To manage instance groups, navigate to the desired GCP environment, click on the **Compute** tab, and then click on *Instance groups*.
 
 ### Adding an instance group
 
