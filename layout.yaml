@@ -27,7 +27,7 @@ categories:
       - working-with-snapshots-and-recovery-points.md
       - working-with-instance-templates.md
 - category: gcp-compute-service
-  icon: fas fa-server
+  icon: fa fa-server
   articles:
       - gcp-working-with-instances.md
       - gcp-working-with-disks.md
