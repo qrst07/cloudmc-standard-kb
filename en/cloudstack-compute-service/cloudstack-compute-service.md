@@ -1,3 +1,3 @@
 ---
-name: Compute Service
+name: CloudStack Compute Service
 ---
