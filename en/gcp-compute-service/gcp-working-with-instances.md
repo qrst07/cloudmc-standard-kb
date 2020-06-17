@@ -65,10 +65,10 @@ Use this command to configure SSH access to the instance.  You will be asked to 
 
 ### Connect via Remote Desktop (for Microsoft Windows-based instances)
 
-Use this command to configure RDP access to the instance.
+Use this command to configure Remote Desktop (RDP) access to the instance.
 
 1. From the **Compute** tab, click the **Action** menu to the right of the instance, and select *Set password*.  This operation can only be performed on an instance in the **running** state.
 1. The *Set password* dialogue box will appear.  Enter your username, and click *Submit*.
    **Note:**  Setting the password for an account that already exists can cause loss of the account's encrypted data.
-1. Momentarily, a dialogue box will appear.  It will display the IP address of the instance, and the credentials to log in.
-1. Configure your Remote Desktop client with these parameters to connect to the instance.
+1. Momentarily, a notification will appear, displaying the IP address of the instance, and the credentials to log in.
+1. Configure your Remote Desktop client with these parameters.  You can now connect to the instance.
