@@ -38,7 +38,7 @@ Alternatively, a disk may be detached from an instance via the *Instance details
 
 ### Resize a disk
 
-A disk can be resized to increase the amount of storage space allocated.  A disk can can only be increased.  Decreasing the size of a disk in not supported.
+A disk can be resized to increase the amount of storage space allocated.  Disk space can can only be increased.  Decreasing the size of a disk in not supported.
 
 1. From the *Disks* page, click the **Action** menu to the right of the disk you wish to resize, and click *Resize*.
 1. A dialogue box will appear.  In the text box labeled **Disk size**, enter the number of gigabytes desired for the disk.

@@ -18,6 +18,7 @@ To access instances, navigate to your GCP environment and click on the **Compute
    - **New ephemeral IP:**  Your instance will be assigned a new public IP every time it boots.
    - **New static IP:**  A public IP will be reserved specifically for this instance, and will be the same every time it boots.
 1. You may choose to specify a startup script to be executed every time the instance boots.  Enter the desired startup script in the text box labeled **Automation - Startup script**. For instances running Unix-based operating systems, this can be a shell script, and for Windows instances this can be a metadata key, where the value is the desired batch commands or PowerShell commands.
+1. Click *Submit*.  The new instance will appear in the list, and will be in the **provisioning** state.  Once the instance has been provisioned, it will transition to the **running** state.
 
 ### Get instance details
 
@@ -43,7 +44,7 @@ To access instances, navigate to your GCP environment and click on the **Compute
 
 An instance in any state may be deleted.
 
-**Note:** Deleting an instance will delete the boot disk, and also any disks that were attached to the instance with the deletion rule *Delete disk* was selected.
+**Note:** Deleting an instance will delete the boot disk, and also any disks that were attached to the instance with the deletion rule *Delete disk* selected.
 
 1. From the **Compute** tab, click on the **Action** menu to the right of the instance, and select *Delete*.
 1. A dialogue box will appear, asking for confirmation to continue.  Click *Submit*.
