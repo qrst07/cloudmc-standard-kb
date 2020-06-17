@@ -18,9 +18,6 @@ categories:
   icon: fa fa-cloud
   articles:
       - working-with-instances.md
-      - gcp-working-with-instances.md
-      - gcp-working-with-disks.md
-      - gcp-instance-groups.md
       - add-storage-to-instance.md
       - working-with-ssh-keys.md
       - configure-load-balancing.md
@@ -29,6 +26,12 @@ categories:
       - working-with-cloudstack-compute-apis.md
       - working-with-snapshots-and-recovery-points.md
       - working-with-instance-templates.md
+- category: gcp-compute-service
+  icon: fas fa-server
+  articles:
+      - gcp-working-with-instances.md
+      - gcp-working-with-disks.md
+      - gcp-instance-groups.md
 - category: object-storage-service
   icon: fa fa-hdd-o
   articles:
