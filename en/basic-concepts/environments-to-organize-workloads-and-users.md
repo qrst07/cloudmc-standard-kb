@@ -6,7 +6,7 @@ slug: environments-to-organize-workloads-and-users
 
 ### Environments overview
 
-CloudMC provides a powerful mechanism, **environments**, to segregate workloads and resources and to control who gets access to those. Example use-cases of this concept include creating distinct environments to isolate production workloads from development systems, or establishing project-specific [sandboxes](https://en.wikipedia.org/wiki/Sandbox_%28computer_security%29).
+CloudMC provides a powerful mechanism, **environments**, to segregate workloads and resources, and to control who gets access to those. Example use-cases of this concept include creating distinct environments to isolate production workloads from development systems, or establishing project-specific [sandboxes](https://en.wikipedia.org/wiki/Sandbox_%28computer_security%29).
 
 An environment belongs to an organization, is associated with a specific service (e.g. Compute or Object Storage), and is comprised of a set of users who have visibility on a pool of shared resources, such as instances, storage, etc.
 
@@ -27,10 +27,10 @@ Any user with the **User** role, or any other role which has the *Environments: 
 1. If you wish to allow users from other organizations to be added as members, select **Allow external members**.
 1. Click *Submit*.  The environment will be provisioned.
 1. The *Manage members* page will appear.  Here, you may:
-   - select one or more individual users from the list
-   - search for specific users
-   - add **all users** in the organization (**auto-membership**)
-   - add no users to your environment (click *Skip* to proceed to the next page)
+   - Select one or more individual users from the list
+   - Search for specific users
+   - Add **all users** in the organization (**auto-membership**)
+   - Sdd no users to your environment (click *Skip* to proceed to the next page)
 1. For any users you've added, select an environment role.  If you've enabled auto-membership, select a default environment role.
 1. Click *Apply* to commit the selected members.  The users will be added.
 1. The *Initialize environment* page will appear.  Here, you may:
