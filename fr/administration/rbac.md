@@ -77,7 +77,7 @@ Pour contrôler l'accès aux ressources dans un environnement, CloudMC conçoit 
 
 ## Comment assigner le rôles
 
-CloudMC permet à un utilisateur avec le rôle *Administrateur* et plus élevé (ou un utilisateur avec un rôle personnalisé incluyant la permission *Utilisateurs : Gérer*) à assigner des rôles fixes et personnalisés aux utilisateurs.  L'administrateur n'est pas permis à accorder une permission à un autre utilisateur sans déjà avoir cette même permission.  Ce modèle de sécurité empêche un utilisateur d'augmenter son propre accès sans authorisation (élévation des privilèges).
+CloudMC permet à un utilisateur avec le rôle *Administrateur* et plus élevé (ou un utilisateur avec un rôle personnalisé incluyant la permission *Utilisateurs : Gérer*) à assigner des rôles fixes et personnalisés aux utilisateurs.  L'administrateur n'est pas permis à accorder une permission à un autre utilisateur sans déjà avoir cette même permission.  Ce modèle de sécurité empêche un utilisateur d'augmenter son propre accès sans autorisation (élévation des privilèges).
 
 Les rôles primaires sont assignés à l'utilisateur de la page *Modifier l'utilisateur*.
 
