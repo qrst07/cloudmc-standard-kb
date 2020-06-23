@@ -30,7 +30,7 @@ Any user with the **User** role, or any other role which has the *Environments: 
    - Select one or more individual users from the list
    - Search for specific users
    - Add **all users** in the organization (**auto-membership**)
-   - Sdd no users to your environment (click *Skip* to proceed to the next page)
+   - Add no users to your environment (click *Skip* to proceed to the next page)
 1. For any users you've added, select an environment role.  If you've enabled auto-membership, select a default environment role.
 1. Click *Apply* to commit the selected members.  The users will be added.
 1. The *Initialize environment* page will appear.  Here, you may:
