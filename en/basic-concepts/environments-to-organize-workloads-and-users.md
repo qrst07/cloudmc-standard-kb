@@ -25,15 +25,15 @@ Any user with the **User** role, or any other role which has the *Environments: 
 1. Click on *Add environment*.  The *Add environment* page will appear.
 1. Enter a name and an optional description for the environment.
 1. If you wish to allow users from other organizations to be added as members, select **Allow external members**.
-1. Click *Submit*.  The environment will be provisioned.
-1. The *Manage members* page will appear.  Here, you may:
+1. Click *Next*.  The environment will be provisioned.
+1. The *Manage members* page will appear momentarily.  Here, you may:
    - Select one or more individual users from the list
    - Search for specific users
    - Add **all users** in the organization (**auto-membership**)
    - Add no users to your environment (click *Skip* to proceed to the next page)
 1. For any users you've added, select an environment role.  If you've enabled auto-membership, select a default environment role.
 1. Click *Apply* to commit the selected members.  The users will be added.
-1. The *Initialize environment* page will appear.  Here, you may:
+1. For some services, the *Initialize environment* page will appear next.  Here, you may:
    - Configure an isolated network with no access to any other subnet, nor to the public Internet
    - Configure one, two, or three VPCs.  See [What is a VPC](what-is-a-vpc.md) for more information on VPCs
    - Configure no network (click *Skip* to finish creating the environment)

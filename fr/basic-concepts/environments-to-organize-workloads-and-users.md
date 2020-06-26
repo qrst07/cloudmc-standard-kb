@@ -1,6 +1,6 @@
 ---
-title: "Les environnements pour compartimenter charges de travail et utilisateurs"
-slug: environnements-pour-compartimenter-charges-de-travail-et-utilisateurs
+title: "Utiliser les environnements pour compartimenter les charges de travail et les utilisateurs"
+slug: utiliser-les-environnements-pour-compartimenter-les-charges-de-travail-et-les-utilisateurs
 ---
 
 
@@ -8,7 +8,7 @@ slug: environnements-pour-compartimenter-charges-de-travail-et-utilisateurs
 
 CloudMC offre un mécanisme puissant, les **environnements**, afin de ségréger les ressources et les charges de travail, et contrôler l'accès à celles-ci. Un cas d'utilisation commun est l'isolation des charges de travail de production et des systèmes en développement, ou encore la création de [carrés de sable](https://fr.wikipedia.org/wiki/Sandbox_%28s%C3%A9curit%C3%A9_informatique%29) spécifiques à certains projets.
 
-Un environnement appartient à une organisation, est associé à un service (e.g.: Calcul ou Stockage d'objet) et est composé d'un ensemble d'utilisateurs qui ont une visibilité sur des ressources communes (e.g.: instances, stockage, etc).
+Un environnement appartient à une organisation, est associé à un service (ex.: Calcul ou Stockage d'objet) et est composé d'un ensemble d'utilisateurs qui ont une visibilité sur des ressources communes (ex.: instances, stockage, etc).
 
 Bien que CloudMC mesure l'utilisation des services au niveau des organisations pour des fins de facturation, les ressources consommées par chaque environnement sont également mesurées indépendamment, ce qui permet au entreprises qui le désirent d'effectuer de la facturation interne par environnement.
 
@@ -26,16 +26,16 @@ Tout utilisateur ayant le rôle **Utilisateur**, ou toute autre rôle disposant 
 1. Saisissez un nom et une description facultative pour l'environnement.
 1. Si vous souhaitez autoriser des utilisateurs d'autres organisations à être ajoutés en tant que membres, sélectionnez **Autoriser les membres externes**.
 1. Cliquez sur *Suivant*. L'environnement sera approvisionné.
-1. La page *Gérer les membres* apparaît. Ici, vous pouvez :
+1. La page *Gérer les membres* apparaîtra pendant un moment. Ici, vous pouvez :
     - Sélectionnez un ou plusieurs utilisateurs individuels dans la liste
     - Rechercher d'utilisateurs spécifiques
-    - Ajouter **tous les utilisateurs** dans l'organisation (**géstion automatique**)
+    - Ajouter **tous les utilisateurs** dans l'organisation (**gestion automatique**)
     - N'ajoutez aucun utilisateur à votre environnement (cliquez sur *Sauter* pour passer à la page suivante)
-1. Pour tous les utilisateurs que vous avez ajoutés, sélectionnez un rôle d'environnement. Si vous avez activé la géstion automatique, sélectionnez un rôle d'environnement par défaut.
+1. Pour tous les utilisateurs que vous avez ajoutés, sélectionnez un rôle d'environnement. Si vous avez activé la gestion automatique, sélectionnez un rôle d'environnement par défaut.
 1. Cliquez sur *Appliquer* pour valider les membres sélectionnés. Les utilisateurs seront ajoutés.
-1. La page *Initialiser l'environnement* apparaît. Ici, vous pouvez :
+1. Pour certains services, la page *Initialiser l'environnement* apparaîtra pendant un moment. Ici, vous pouvez :
     - Configurer un réseau isolé sans accès à aucun autre sous-réseau, ni à l'Internet public
-    - Configurer un, deux ou trois VPC. Voir [Qu'est-ce qu'un VPC](what-is-a-vpc.md) pour plus d'informations sur les VPC
+    - Configurer un, deux ou trois VPCs. Voir [Qu'est-ce qu'un VPC](what-is-a-vpc.md) pour plus d'informations sur les VPC
     - Ne configurer aucun réseau (cliquez sur *Sauter* pour terminer la création de l'environnement)
 1. Si vous avez choisi de créer un ou plusieurs réseaux, entrez les paramètres demandés pour les réseaux à créer.
 1. Cliquez sur *Initialiser*.
@@ -45,6 +45,6 @@ Tout utilisateur ayant le rôle **Utilisateur**, ou toute autre rôle disposant 
 
 À partir de la page *Environnements*, vous pouvez cliquer sur l'icône *Modifier* à droite d'un environnement pour changer le nom, la description ou l'option pour autoriser les membres externes.
 
-Cliquer sur le menu *Action* d'un environnement vous permettra de gérer les membres qui ont accès à l'environnement, ou de supprimer l'environnement. De plus, vous pouvez également copier l'UUID de l'environnement à partir de l'orchestrateur cloud sous-jacent, et forcer la régénération des informations mises en cache sur cet environnement à partir de l'orchestrateur cloud.
+Cliquer sur le menu *Action* d'un environnement vous permettra de gérer les membres qui ont accès à l'environnement, ou de supprimer l'environnement. De plus, vous pouvez également copier l'UUID de l'environnement à partir de l'orchestrateur infonuagique sous-jacent, et forcer le rafraîchissement des informations mises en cache pour cet environnement à partir de l'orchestrateur infonuagique.
 
 **Avis :** La suppression d'un environnement supprime définitivement TOUTES les ressources, instances, disques et réseaux de l'environnement supprimé. Il s'agit d'une opération destructrice qui ne peut **pas être annulée**.
