@@ -12,7 +12,6 @@ categories:
       - main-cloud.ca-entities.md
       - what-is-an-instance-template.md
       - what-is-a-vpc.md
-      - system-roles.md
       - what-is-object-storage.md
 - category: cloudstack-compute-service
   icon: fa fa-cloud
