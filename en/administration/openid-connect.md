@@ -11,7 +11,7 @@ Integrating CloudMC with an OpenID Connect provider is a three-stop process:
    - Configure CloudMC
    - Submit a **callback URL** to the provider
 
-Any user with the **Reseller** role, or any other role which has the *AUTHENTICATION* permission, may add an OpenID Connect identity provider.
+Any user with the **Reseller** role, or any other role which has the *Authentication: Manage* permission, may add an OpenID Connect identity provider.
 
 Navigate to *System* -> *Authentication* to get to the *Authentication* page, where all configured identity providers are listed.
 
