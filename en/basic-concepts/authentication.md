@@ -6,7 +6,7 @@ slug: authentication
 
 ### Authentication and user accounts in CloudMC
 
-A user account allows a person to access the CloudMC console and manage virtual resources.  User accounts in an organization are accessed by navigating to *Administration* -> *Users*.  CloudMC provides three ways to manage user accounts, providing extensible support for various login mechanisms:
+A user account allows a person to access the CloudMC console and manage virtual resources.  User accounts are always associated with an organization, and are accessed by navigating to *Administration* -> *Users*.  CloudMC provides three ways to manage user accounts, providing extensible support for various login mechanisms:
 
    - **Internal:**  The default mechanism for managing user accounts.  Credentials are stored in CloudMC's internal database.
    - **LDAP:**  CloudMC supports authentication through an LDAP server, including Microsoft Active Directory.
