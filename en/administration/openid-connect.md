@@ -4,6 +4,10 @@ slug: authenticating-with-openid-connect
 ---
 
 
+### Overview of OpenID Connect
+
+OpenID Connect is authentication system based on OAuth 2.0, and is currently the most widely adopted external authentication system.  
+
 ### How to configure an external OpenID Connect provider
 
 Integrating CloudMC with an OpenID Connect provider is a three-step process, described in the following sections:

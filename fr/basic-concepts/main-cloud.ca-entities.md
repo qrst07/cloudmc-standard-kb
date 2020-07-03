@@ -10,7 +10,7 @@ Un **utilisateur** est une personne qui accède la console de CloudMC pour gére
 
 Un **département** est un regroupement hiérarchique d’utilisateurs à l’intérieur d’une organisation. Il n’est pas obligatoire d’effectuer ce groupement, par contre il peut faciliter l’exécution de certaines tâches nécessitant la sélection de multiples utilisateurs qui travaillent ensemble.
 
-Un **rôle** est une collection nommée de permissions à l’intérieur d’une organisation. Un utilisateur peut avoir plusieurs rôles (ils sont additifs) afin de déterminer ce qu’il a le droit de faire dans la console de CloudMC. Voyez [Les rôles système pour contrôler l'accès des utilisateurs](system-roles.md) pour en apprendre davantage sur ce concept.
+Un **rôle** est une collection nommée de permissions à l’intérieur d’une organisation. Un utilisateur peut avoir plusieurs rôles (ils sont additifs) afin de déterminer ce qu’il a le droit de faire dans la console de CloudMC. Voyez [Contrôle d'accès à base de rôles](rbac.md) pour en apprendre davantage sur ce concept.
 
 Un **service** est une abstraction à travers laquelle un utilisateur acquiert et interagit avec ses ressources virtuelles.
 
