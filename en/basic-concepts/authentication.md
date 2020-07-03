@@ -28,4 +28,4 @@ When using internal authentication, no additional configuration is necessary.
 
 <!-- Link to LDAP article -->
 
-For details on configuring external identity providers, see [Authenticating with OpenID Connect](openid-connect.md).
+For details on configuring external identity providers, see [Authenticating with OpenID Connect](../administration/openid-connect.md).
