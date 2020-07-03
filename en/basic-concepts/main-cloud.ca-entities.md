@@ -6,11 +6,11 @@ slug: main-cloudmc-entities
 
 An **organization** is the entity to which we bill the services consumed on the CloudMC infrastructure. It hold various attributes that are common to all its users (e.g.: login page, logo, authentication type, policies, etc).
 
-A **user** is a person that accesses the CloudMC console to manage his virtual resources.
+A **user** is a person that accesses the CloudMC console to manage virtual resources.
 
 A **department** is a hierarchical grouping of users within an organization. Grouping users by department is entirely optional, but may help in quickly selecting multiple users who work closely together.
 
-A **role** is a named collection of permissions within an organization. A user may be assigned multiple roles (which are additive) to determine what he his able to do in the CloudMC console. See [Using system roles to enforce access control](system-roles.md) to learn more about this concept.
+A **role** is a named collection of permissions within an organization. A user may be assigned multiple roles (which are additive) to determine what he his able to do in the CloudMC console. See [Role-based access controls](rbac.md) to learn more about this concept.
 
 A **service** is an abstraction through which a user provision and interacts with his virtual resources.
 
