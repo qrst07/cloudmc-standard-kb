@@ -25,6 +25,7 @@ Tout utilisateur ayant le rôle **Utilisateur**, ou toute autre rôle disposant 
 1. Cliquez sur *Ajouter environnement*. La page *Ajouter environnement* apparaît.
 1. Saisissez un nom et une description facultative pour l'environnement.
 1. Si vous souhaitez autoriser des utilisateurs d'autres organisations à être ajoutés en tant que membres, sélectionnez **Autoriser les membres externes**.
+1. Pour certains services, un triangle de divulgation sera disponible avec des options avancées. Voir l'article *Travailler avec des instances* pour votre service particulier pour obtenir plus de détails.
 1. Cliquez sur *Suivant*. L'environnement sera approvisionné.
 1. La page *Gérer les membres* apparaîtra pendant un moment. Ici, vous pouvez :
     - Sélectionnez un ou plusieurs utilisateurs individuels dans la liste
