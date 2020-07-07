@@ -39,11 +39,23 @@ Alternatively, a disk may be detached from an instance via the *Instance details
 
 ### Resize a disk or change disk type
 
-A disk can be resized to increase the amount of storage space allocated.  Disk space can can only be increased.  Decreasing the size of a disk in not supported.  Additionally, 
+A disk can be resized to increase the amount of storage space allocated.  Disk space can can only be increased.  Decreasing the size of a disk in not supported.  Additionally, the performance type of the disk can be changed.
 
-1. From the *Disks* page, click the **Action** menu to the right of the disk you wish to resize, and click *Resize*.
-1. A dialogue box will appear.  In the text box labeled **Disk size**, enter the number of gigabytes desired for the disk.
-1. Click *Submit*.  The disk will be resized and a notification will appear when the operation has completed.
+**Note:** If the disk is attached to a running instance, modification of the disk will restart the instance.
+
+1. From the *Disks* page, click the **Action** menu to the right of the disk you wish to modify, and click *Edit*.
+1. The *Edit* page will appear.
+1. To change the performance type of the disk,
+1. To resize the disk, move the **Disk size** slider to the number of gigabytes desired for the disk.
+1. Click *Submit*.  The disk will be modified accordingly, and a notification will appear when the operation has completed.
 1. The filesystem can now be extended from within the instance's operating system.
 
 Alternatively, a disk may be resized if it is attached via the instance's *Instance details* page.
+
+### Delete a disk
+
+A disk must be detached before it can be deleted.  Deleting a disk is permanent.  This action cannot be undone.
+
+1. From the **Disks** tab, click the **Action** menu to the right of the disk you wish to delete, and click *Delete*.
+1. A dialogue box will appear, asking for confirmation to continue.  Click *Submit*.
+1. This disk will be deleted and will be removed from the list of disks.

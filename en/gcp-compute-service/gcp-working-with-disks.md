@@ -51,7 +51,7 @@ Alternatively, a disk may be resized if it is attached via the instance's *Insta
 
 ### Delete a disk
 
-A disk must be detached before in can be deleted.  Deleting a disk is permanent.  This action cannot be undone.
+A disk must be detached before it can be deleted.  Deleting a disk is permanent.  This action cannot be undone.
 
 1. From the *Disks* page, click the **Action** menu to the right of the disk you wish to delete, and click *Delete*.
 1. A dialogue box will appear, asking for confirmation to continue.  Click *Submit*.
