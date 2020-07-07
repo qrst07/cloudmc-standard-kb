@@ -6,7 +6,7 @@ slug: gcp-working-with-instances
 
 To create, modify, or delete an instance, an account with the *User* role must be a member of the environment which contains the instance, and also have the *Editor* or *Owner* environment role assigned.  An account with the *Administrator* role or higher may create, modify, or delete instances in an environment.
 
-To access instances, navigate to your GCP environment and click on the **Compute** tab.
+To access instances, navigate to your GCP environment and click on the **Compute** tab.  At least one VPC must exist before an instance can be created.
 
 ### Add an instance
 

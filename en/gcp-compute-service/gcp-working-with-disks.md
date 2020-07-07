@@ -14,11 +14,13 @@ To access disks, navigate to your GCP environment and click on the **Compute** t
 
 1. From the *Disks* page, click *Add disk*.  You will be taken to the *Add disk* page.
 1. Enter a name for your disk.
-1. Select the region and zone where you want the disk to be available.  A disk can only be attached to an instance in the same region and zone.
+1. Select the region and zone where you want the disk to be available.  The region and zone cannot be changed once the disk is created. A disk can only be attached to an instance in the same region and zone.
 1. Enter the parameters for disk type, disk size, and block size.
 1. Click *Submit*.  The disk will be created and will appear in the on the *Disks* page in the **ready** state.
 
 ### Attach a disk to an instance
+
+A disk can not be attached to an instance when the disk is already in the **attached** state.
 
 1. From the *Disks* page, click the **Action** menu to the right of the disk you wish to attach, and click *Attach*.
 1. The *Attach* dialogue box will appear.  Select the desired instance from the **Instance** pop-up list.
