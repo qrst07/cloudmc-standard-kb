@@ -3,8 +3,8 @@ title: "Microsoft Azure: Working with disks"
 slug: azure-working-with-disks
 ---
 
-[NEED TO VERIFY SECOND SENTENCE BELOW]
-A **disk** is storage that is presented to an instance as a block device, which can then be mounted and used.  All instances have a boot disk, which can be resized but which cannot be deleted nor detached from its instance.  Additional disks can be created, resized, attached or detached, and deleted.
+
+A **disk** is storage that is presented to an instance as a block device, which can then be mounted and used.  All instances have a boot disk, which can be resized but which cannot be detached from its instance.  Additional disks can be created, resized, attached or detached, and deleted.
 
 To create, modify, or delete a disk, an account with the *User* role must be a member of the environment which contains the instance, and also have the *Editor* or *Owner* environment role assigned.  An account with the *Administrator* role or higher may create, modify, or delete disks in an environment.
 
@@ -20,7 +20,7 @@ To access disks, navigate to your Microsoft Azure environment and click on the *
 
 ### Attach a disk to an instance
 
-A disk can not be attached to an instance when the disk is already in the **Attached** state.
+A disk can only be attached to an instance when the disk is in the **Detached** state.
 
 1. From the **Disks** tab, click the **Action** menu to the right of the disk you wish to attach, and click *Attach*.
 1. The *Attach* dialogue box will appear.  Select the desired instance from the **Instance** pop-up list.
