@@ -3,7 +3,7 @@ title: "Microsoft Azure: Working with disks"
 slug: azure-working-with-disks
 ---
 
-
+[NEED TO VERIFY SECOND SENTENCE BELOW]
 A **disk** is storage that is presented to an instance as a block device, which can then be mounted and used.  All instances have a boot disk, which can be resized but which cannot be deleted nor detached from its instance.  Additional disks can be created, resized, attached or detached, and deleted.
 
 To create, modify, or delete a disk, an account with the *User* role must be a member of the environment which contains the instance, and also have the *Editor* or *Owner* environment role assigned.  An account with the *Administrator* role or higher may create, modify, or delete disks in an environment.

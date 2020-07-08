@@ -4,7 +4,7 @@ slug: gcp-working-with-disks
 ---
 
 
-A **disk** is storage that is presented to an instance as a block device, which can then be mounted and used.  All instances have a boot disk, which can be resized but which cannot be deleted nor detached from its instance.  Additional disks can be created, resized, attached or detached, and deleted.
+A **disk** is storage that is presented to an instance as a block device, which can then be mounted and used.  All instances have a boot disk, which can be resized but which cannot detached from its instance.  Additional disks can be created, resized, attached or detached, and deleted.
 
 To create, modify, or delete a disk, an account with the *User* role must be a member of the environment which contains the instance, and also have the *Editor* or *Owner* environment role assigned.  An account with the *Administrator* role or higher may create, modify, or delete disks in an environment.
 
@@ -56,3 +56,12 @@ A disk must be detached before it can be deleted.  Deleting a disk is permanent.
 1. From the *Disks* page, click the **Action** menu to the right of the disk you wish to delete, and click *Delete*.
 1. A dialogue box will appear, asking for confirmation to continue.  Click *Submit*.
 1. This disk will be deleted and will be removed from the list of disks.
+
+### Take a snapshot of a disk
+
+A snapshot of a disk is an instantaneous copy of a disk at a given point in time.
+
+1. From the *Disks* page, click the **Action** menu to the right of the disk you wish to snapshot, and click *Take snapshot*.
+1. A dialogue box will appear, asking for the name to give to the snapshot.  Click *Submit*.
+1. The snapshot will be taken, and will appear on the *Snapshots* page in the **Creating** state.
+1. When the snapshot is created, it will change to the **Uploading** state.  When it is complete, it will appear in the **Ready** state.
