@@ -38,7 +38,7 @@ Cada uno de los roles de sistema tiene un *alcance*, que puede ser uno de los si
 Usando la funcionalidad de etiquetas, el alcance de un rol asignado puede crecer automaticamente cuando una organización está etiquetada, y se peuede reducir cuando la etiqueta se borra.  Esto permite escenarios donde el alcance del rol puede cambiarse en una manera dinámica basado en las reglas del negocio.
 
 ## Los roles fijos
-Los roles fijos incorporados en CloudMC son applicables a una amplia gama de casos de uso.  Ellos pueden ser asignados al rol primario de un usuario, o como un rol addicional.
+Los roles fijos incorporados en CloudMC son applicables a una amplia gama de casos de uso.  Ellos pueden ser asignados al rol primario de un usuario, o como un rol adicional.
 
 Un sumario de cada rol fijo cuando aplicado como un rol primario:
 
@@ -83,7 +83,7 @@ Roles primarios se asignan a usuarios en la página *Editar usuario*.
 
 ![edit user page, primary role](/assets/rbac-select_primary_role-en.png)
 
-Se pueden asignar roles addicionales a un usuario en irse a la página *Editar usuario* y hacer clic en *Roles adicionales* en la barra lateral.
+Se pueden asignar roles adicionales a un usuario en irse a la página *Editar usuario* y hacer clic en *Roles adicionales* en la barra lateral.
 
 ![additional roles page](/assets/rbac-additional_roles-en.png)
 
