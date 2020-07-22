@@ -1,3 +1,3 @@
 ---
-name: Service de CloudStack
+name: Service de Azure
 ---

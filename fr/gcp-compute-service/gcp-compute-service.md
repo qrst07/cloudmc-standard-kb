@@ -1,3 +1,3 @@
 ---
-name: Service de calcul de GCP
+name: Service de GCP
 ---
