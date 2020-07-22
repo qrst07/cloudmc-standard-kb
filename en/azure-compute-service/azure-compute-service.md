@@ -1,3 +1,3 @@
 ---
-name: Azure Compute Service
+name: Azure Service
 ---
