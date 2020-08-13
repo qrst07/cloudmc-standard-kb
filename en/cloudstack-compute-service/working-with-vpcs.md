@@ -39,11 +39,11 @@ For more information about VPCs, please see [What is a VPC](../basic-concepts/wh
 1. Fill the Add network form:
    - **Name:** Name of the Tier (ex: *acme-net-web1*)
    - **Description:** (Optional) Description of the tier (ex: "Production Web servers")
-   - **Select a Network offering:**  Choose the service level of this tier
+   - **Network offering:**  Choose the service level of this tier
       - **Standard Tier:**  A regular network supporting NAT and port forwarding. Suitable for internal applications such as a database server.
       - **Load Balanced Tier:**  (Default) Includes the features of the Standard Tier and also offers the ability to load-balance traffic across multiple instances within that tier, via rules that are applied on a public IP Address. **Note: Only a single tier within a VPC can have this offering.**
-   - **Gateway:** The IP address of the default gateway for the network tier to be created.  This field cannot be modified.
-   - **Netmask:**  Displays the subnet mask of the network tier to be created.  This field cannot be modified.
+   - **Gateway:** The IP address of the default gateway for the network tier to be created.
+   - **Netmask:**  The subnet mask of the network tier to be created.
    - **ACL:** Access control list (ACL) for communication across tiers within the same VPC.  See [Securing your network](securing-your-network.md) for more information about ACLs.
       - **default_allow:**  (Default) Allow all type of traffic from/to other tiers in the VPC.
       - **default_deny:**  Deny all type of traffic from/to other tiers in the VPC.
