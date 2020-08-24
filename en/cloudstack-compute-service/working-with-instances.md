@@ -3,6 +3,8 @@ title: "Working with Instances"
 slug: working-with-instances
 ---
 
+<!-- Slight modifications to import from CCA KB -->
+
 ### Access an Instance's console
 Note: For this operation to be available, your user account needs to be assigned the **Environment Admin** or **User** role on the target environment.
 
