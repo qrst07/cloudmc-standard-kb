@@ -55,8 +55,20 @@ Une instance dans n'importe quel état peut être supprimée.
 Utilisez cette commande pour configurer l'accès SSH à l'instance. Vous recevrez une demande pour fournir votre clé publique SSH ou de sélectionner une clé existante.
 
 1. Dans l'onglet **Calcul**, cliquez sur le menu **Action** à droite de l'instance et sélectionnez **Obtenir la commande SSH**.
-1. La boîte de dialogue ** Obtenir la commande SSH ** apparaît.
-   - Si vous avez déjà configuré une ou plusieurs clés publiques SSH, celles-ci apparaîtront dans le menu contextuel intitulé ** Clé SSH **.
-   - Si vous n'avez pas configuré de clé SSH, ou si vous souhaitez en configurer une nouvelle, sélectionnez l'option * Nouvelle clé SSH * dans le menu contextuel ** Clé SSH **, puis saisissez la clé publique souhaitée dans le zone de texte intitulée ** Clé publique **.
-1. Cliquez sur * Soumettre *.
+1. La boîte de dialogue **Obtenir la commande SSH** apparaît.
+   - Si vous avez déjà configuré une ou plusieurs clés publiques SSH, celles-ci apparaîtront dans le menu contextuel intitulé **Clé SSH**.
+   - Si vous n'avez pas configuré de clé SSH, ou si vous souhaitez en configurer une nouvelle, sélectionnez l'option *Nouvelle clé SSH* dans le menu contextuel **Clé SSH**, puis saisissez la clé publique souhaitée dans le zone de texte intitulée **Clé publique**.
+1. Cliquez sur *Valider*.
 1. La boîte de dialogue disparaîtra. Une règle de pare-feu sera créée pour autoriser le trafic SSH (port 22) vers cette instance. Une notification apparaîtra, fournissant la commande SSH qui peut être utilisée pour se connecter à l'instance.
+
+**Avis :** Votre client SSH doit déjà être configuré avec la clé privée de la clé publique que vous avez sélectionnée.
+
+### Se connecter via Remote Desktop (pour les instances Microsoft Windows)
+
+Utilisez cette commande pour configurer l'accès Remote Desktop (RDP) à l'instance.
+
+1. Dans l'onglet **Calcul**, cliquez sur le menu **Action** à droite de l'instance et sélectionnez *Configurer le mot de passe*. Cette opération ne peut être effectuée que sur une instance à l'état **Active**.
+1. La boîte de dialogue *Configurer le mot de passe* apparaît. Entrez votre nom d'utilisateur et cliquez sur *Valider*.
+    **Avis :** La définition du mot de passe d'un compte qui existe déjà peut entraîner la perte des données chiffrées du compte.
+1. Momentanément, une notification apparaîtra, affichant l'adresse IP de l'instance et les informations d'identification pour se connecter.
+1. Configurez votre client Remote Desktop avec ces paramètres. Vous pouvez maintenant vous connecter à l'instance.
