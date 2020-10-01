@@ -1,6 +1,6 @@
 ---
-title: "GCP: Gestion des disques"
-slug: gcp-gestion-des-disques
+title: "GCP: Gestion des disques et copies instantanées"
+slug: gcp-gestion-des-disques-et-copies-instantanees
 ---
 
 
