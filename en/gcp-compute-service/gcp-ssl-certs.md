@@ -30,6 +30,6 @@ SSL certificates can be managed in CloudMC by navigating to the desired GCP envi
 
 An SSL certificate cannot be deleted if it is in use by a target proxy.
 
-1. From the **SSL certificates**, find the certificate in the list and select the action menu on the far right of the entry.  Click *Delete*.
+1. From the **SSL certificates**, find the certificate in the list and select the *Action* menu on the far right of the entry.  Click *Delete*.
 1. A confirmation dialogue box will appear.  Click *Submit*.
 1. The certificate will be removed from the GCP environment.
