@@ -29,12 +29,14 @@ The following diagram provides a simplified visualization of the relationships b
 
 ### Configuring GCP load balancing
 
-Prior to configuring a new load balancer, you must already have the following:
+#### One-click load balancer configuration
+
+#### Manual configuration
+
+Prior to manually configuring a new load balancer, you must already have the following:
    - At least one instance in the desired region, serving your application or microservice.
    - An instance group in the same region, containing the instance(s).
    - A health check appropriate for the target instance(s).
-
-#### Basic configuration
 
 1. Create a backend service:
    - Click on **Backend services**, and click the *Add backend service* button.
@@ -44,14 +46,14 @@ Prior to configuring a new load balancer, you must already have the following:
    - Select the desired instance group.
    - Click *Submit*.
 1. Create a target proxy:
-   - Click on **Target proxies**, and click on the *Add target proxy* button.
+   - Click on **Target proxies**, and click on the *Add target proxy* button
    - Enter a name, and a description if desired.
    - Select the protocol the target proxy will use for listening for incoming requests from clients.
       - To support HTTPS connections from clients, select HTTPS.  A list of the SSL certificates available to CloudMC will appear beneath the **Protocol** pop-up menu, and you will need to select the appropriate one for this load balancer.  See [GCP: SSL certificates](gcp-ssl-certs.md).  
    - Select a URL map.  If no URL maps have been created, a default URL map will be created at the same time as the target proxy.
    - Click *Submit*.
 1. Create a forwarding rule.
-   - Click on **Forwarding rules**, and click on the *Add forwarding rule* button.
+   - Click on **Forwarding rules**, and click on the *Add forwarding rule* button
    - Enter a name, and a description if desired.
    - Select how you wish a public IP address to be allocated for the load balancer:
       - To allocate an IP address solely for this load balancer and have it released when this forwarding rule is deleted, leave *Reserve a new static IP address* unchecked, and select **Ephemeral** selected in the pop-up menu.  The IP address allocated to the load balancer will **not** appear in the **External IPs** list for this environment.
@@ -61,19 +63,23 @@ Prior to configuring a new load balancer, you must already have the following:
       - When selecting HTTPS, a target proxy configured for SSL must exist in the environment.
    - From the **Target proxy** pop-up menu, elect the target proxy that was configured in the previous step.
    - Click *Submit*.
-1. The *Forwarding rules* page will appear.  Verify that the new load balancer appears in the list.  It will also appear under the **Load balancers** item.
+1. The *Forwarding rules* page will appear, and the new forwarding rule will be listed.
+1. The new load balancer will appear under the **Load balancers** item.  It will automatically be given the same name as the selected URL map.
 
 The new load balancer is now active and ready for testing with public traffic.  The public IP address for your load balancer is listed on both the *Forwarding rules* and the *Load balancers* page.
 
 #### Enabling SSL in the backend
 
-1. Install a valid SSL certificate on each instance in the instance group.
-1. Server must be configured to use HTTPS.
-1. Select HTTPS for the protocol in the desired backend service.
+Google Cloud Platform automatically encrypts traffic between the load balancer and the backend services.  However, for addidtional security, GCP supports HTTPS connections between the target proxy and the backend.  The following requirements must be met:
 
-
-Install SSL certs? - If using SSL between the target proxy and the backend service, a valid SSL certificate must be installed on each instance in the group.
+   - A valid SSL certificate must be installed on each instance in the instance group.  The certificate's common name does not have to match the instance's hostname.
+   - Every instance in the group must be configured to use HTTPS.
+   - HTTPS should be configured as the protocol in the desired backend service.
 
 #### Delete a GCP load balancer
 
-Deletes the forwarding rule, target proxy, URL map
+Deletes a GCP load balance will also automatically delete associated the forwarding rule, target proxy, URL map, and it will also release an ephemeral IP addresses allocated to the forwarding rule.
+
+1. From the *Load balancers* page, find the desired load balancer and click on the *Action* menu on the far right hand side of the entry.  Click *Delete*.
+1. A confirmation dialogue box will appear.  Click *Submit*.
+1. The load balancer will be removed from the GCP environment.

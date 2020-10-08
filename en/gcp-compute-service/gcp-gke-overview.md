@@ -22,5 +22,3 @@ In the **Kubernetes engine** tab, a list of available clusters will appear.
 #### Pods
 
 #### Deployments, daemon sets, and stateful sets
-
- 
