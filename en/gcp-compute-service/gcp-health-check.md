@@ -11,7 +11,7 @@ Health checks can be managed by navigating to your GCP environment in CloudMC, c
 ### Create a health check
 
 1. From the *Health checks* page, click on the *Add health check* button.
-1. Enter a name, and a description if desired.
+1. Enter a name, or accept the default, and enter a description if desired.
 1. Select the protocol to use (HTTP or HTTPS) and enter the port number to connect to on the backend instance.
 1. Click *Submit*.  The *Health checks* page will appear, and the new health check will be listed.
 

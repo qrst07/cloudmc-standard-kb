@@ -17,7 +17,7 @@ SSL certificates can be managed in CloudMC by navigating to the desired GCP envi
 
 1. From the **SSL certificates** page, click the *Add SSL certificate* button.
    ![Add SSL certificate page](../../assets/gcp-ssl-cert-1-en.png)
-1. Enter a name, and a description if desired.
+1. Enter a name, or accept the default, and enter a description if desired.
 1. Paste the entire certificate, including the header and footer lines, into the text box labeled *Public certificate*.
 1. Paste any intermediate certificates, including the header and footer lines, into the text box labeled *Certification chain*.
    - If there is more than one intermediate certificate, arrange them in order from the lowest (the certificate that was used to sign the uploaded certificate) to the highest (the certificate that was signed with the root certificate).  Leave no spaces between the footer line of one certificate and the header line of the next one.

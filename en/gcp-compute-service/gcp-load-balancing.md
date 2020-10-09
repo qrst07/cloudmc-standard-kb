@@ -29,32 +29,46 @@ The following diagram provides a simplified visualization of the relationships b
 
 ### Configuring GCP load balancing
 
-#### One-click load balancer configuration
-
-#### Manual configuration
-
 Prior to manually configuring a new load balancer, you must already have the following:
    - At least one instance in the desired region, serving your application or microservice.
    - An instance group in the same region, containing the instance(s).
    - A health check appropriate for the target instance(s).
+   - An SSL certificate uploaded, if support for HTTPS is required.  See [GCP: SSL certificates](gcp-ssl-certs.md).
+
+#### One-step load balancer configuration
+
+If a backend service has already been defined, CloudMC enables the creation of a load balancer on a single page, and will create the necessary components on your behalf using reasonable default values.
+
+1. From the *Load balancers* page, click on the *Add load balancer* button.
+1. Enter a name for the load balancer, or accept the default.
+1. Select the backend service for this load balancer.
+1. Select how to allocate a public IP address.  See *Create a forwarding rule* in the **Manual configuration** section below for more details.
+1. Select which protocol to listen on for incoming requests.
+   - If HTTPS is selected, a pop-up menu containing a list of uploaded SSL certificates will appear.  Select the appropriate certificate for this load balancer.
+1. Click *Submit*.
+1. The *Load balancers* page will appear, and the new load balancer will appear in the list.
+
+The new load balancer is now active and ready for testing with public traffic.  The public IP address for your load balancer is listed on both the *Forwarding rules* and the *Load balancers* page.
+
+#### Manual configuration
 
 1. Create a backend service:
    - Click on **Backend services**, and click the *Add backend service* button.
-   - Enter a name, and a description if desired.
+   - Enter a name, or accept the default, and enter a description if desired.
    - Select the protocol to use for communicating with the instance group.  If using HTTPS, see the section below on enabling SSL.
    - Select the desired health check for the instance group.
    - Select the desired instance group.
    - Click *Submit*.
 1. Create a target proxy:
    - Click on **Target proxies**, and click on the *Add target proxy* button
-   - Enter a name, and a description if desired.
+   - Enter a name, or accept the default, and enter a description if desired.
    - Select the protocol the target proxy will use for listening for incoming requests from clients.
-      - To support HTTPS connections from clients, select HTTPS.  A list of the SSL certificates available to CloudMC will appear beneath the **Protocol** pop-up menu, and you will need to select the appropriate one for this load balancer.  See [GCP: SSL certificates](gcp-ssl-certs.md).  
+      - To support HTTPS connections from clients, select HTTPS.  A list of the SSL certificates available to CloudMC will appear beneath the **Protocol** pop-up menu, and you will need to select the appropriate one for this load balancer.
    - Select a URL map.  If no URL maps have been created, a default URL map will be created at the same time as the target proxy.
    - Click *Submit*.
 1. Create a forwarding rule.
    - Click on **Forwarding rules**, and click on the *Add forwarding rule* button
-   - Enter a name, and a description if desired.
+   - Enter a name, or accept the default, and enter a description if desired.
    - Select how you wish a public IP address to be allocated for the load balancer:
       - To allocate an IP address solely for this load balancer and have it released when this forwarding rule is deleted, leave *Reserve a new static IP address* unchecked, and select **Ephemeral** selected in the pop-up menu.  The IP address allocated to the load balancer will **not** appear in the **External IPs** list for this environment.
       - To use a public IP address that has already been allocated in this environment, select
