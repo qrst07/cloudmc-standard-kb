@@ -11,7 +11,7 @@ GCP load balancing is accessed by navigating to the desired GCP environment, cli
 ### Concepts in GCP load balancing
 
 - **Instance group**: Defines the pool of instances that provide an application or a microservice.
-- **Health check**: Defines criteria for the determining the availability of an instance.
+- **Health check**: Defines criteria for determining the availability of an instance.
 - **Backend service**: Binds together an instance group, a health check for the instances in that group, and the protocol to use for communicating with those instances.
 - **URL map**: Specifies which backend service to send traffic to, based on the request URL.
 - **Target proxy**: Listens for traffic on the specified protocol, and forwards that traffic to the correct backend service, based on the specified URL map.
@@ -67,15 +67,15 @@ The new load balancer is now active and ready for testing with public traffic.  
    - Select a URL map.  If no URL maps have been created, a default URL map will be created at the same time as the target proxy.
    - Click *Submit*.
 1. Create a forwarding rule.
-   - Click on **Forwarding rules**, and click on the *Add forwarding rule* button
+   - Click on **Forwarding rules**, and click on the *Add forwarding rule* button.
    - Enter a name, or accept the default, and enter a description if desired.
    - Select how you wish a public IP address to be allocated for the load balancer:
       - To allocate an IP address solely for this load balancer and have it released when this forwarding rule is deleted, leave *Reserve a new static IP address* unchecked, and select **Ephemeral** selected in the pop-up menu.  The IP address allocated to the load balancer will **not** appear in the **External IPs** list for this environment.
-      - To use a public IP address that has already been allocated in this environment, select
+      - To use a public IP address that has already been allocated in this environment, select it from the list.
       - To reserve a new public IP address that will be not be released when the forwarding rule is deleted, select *Reserve a new static IP address*.  The pop-up menu will disappear, and a new IP address will be allocated when the forwarding rule is created.  The IP address will also appear in the **External IPs** list for this environment.
    - Select the protocol to use and which port to listen on for incoming requests.
       - When selecting HTTPS, a target proxy configured for SSL must exist in the environment.
-   - From the **Target proxy** pop-up menu, elect the target proxy that was configured in the previous step.
+   - From the **Target proxy** pop-up menu, select the target proxy that was configured in the previous step.
    - Click *Submit*.
 1. The *Forwarding rules* page will appear, and the new forwarding rule will be listed.
 1. The new load balancer will appear under the **Load balancers** item.  It will automatically be given the same name as the selected URL map.
@@ -92,7 +92,7 @@ Google Cloud Platform automatically encrypts traffic between the load balancer a
 
 #### Delete a GCP load balancer
 
-Deletes a GCP load balance will also automatically delete associated the forwarding rule, target proxy, URL map, and it will also release an ephemeral IP addresses allocated to the forwarding rule.
+Deleting a GCP load balance will also automatically delete the associated forwarding rule, target proxy, URL map, and it will also release the ephemeral IP addresses allocated to the forwarding rule.
 
 1. From the *Load balancers* page, find the desired load balancer and click on the *Action* menu on the far right hand side of the entry.  Click *Delete*.
 1. A confirmation dialogue box will appear.  Click *Submit*.
