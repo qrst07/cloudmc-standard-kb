@@ -1,6 +1,6 @@
 ---
-title: "GCP: Working with disks"
-slug: gcp-working-with-disks
+title: "GCP: Working with disks and snapshots"
+slug: gcp-working-with-disks-and-snapshots
 ---
 
 

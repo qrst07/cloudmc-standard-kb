@@ -13,7 +13,7 @@ To manage instance groups, navigate to the desired GCP environment, click on the
 ### Adding an instance group
 
 1. From the *Instance groups* page, click on *Add instance group*.  The *Add instance group* page will appear.
-1. Provide a name for the instance group, and an optional description.
+1. Enter a name, or accept the default, and enter a description if desired.
 1. Select the region and zone where the instances to group are located.
 1. If the selected subnetwork contains instances, a pop-up list labeled **Instances** will appear beneath the subnetwork.  You may choose zero or more instances from this list to become members of this instance group.  Note that changing a zone will clear the list of instances already selected.
 1. Click *Submit* to create the group.
