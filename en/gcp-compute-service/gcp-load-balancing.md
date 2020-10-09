@@ -92,7 +92,7 @@ Google Cloud Platform automatically encrypts traffic between the load balancer a
 
 #### Delete a GCP load balancer
 
-Deleting a GCP load balance will also automatically delete the associated forwarding rule, target proxy, URL map, and it will also release the ephemeral IP addresses allocated to the forwarding rule.
+Deleting a GCP load balancer will also automatically delete the associated forwarding rule, target proxy, URL map, and it will also release the ephemeral IP addresses allocated to the forwarding rule.
 
 1. From the *Load balancers* page, find the desired load balancer and click on the *Action* menu on the far right hand side of the entry.  Click *Delete*.
 1. A confirmation dialogue box will appear.  Click *Submit*.
