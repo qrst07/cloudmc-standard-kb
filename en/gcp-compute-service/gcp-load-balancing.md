@@ -70,7 +70,7 @@ The new load balancer is now active and ready for testing with public traffic.  
    - Click on **Forwarding rules**, and click on the *Add forwarding rule* button.
    - Enter a name, or accept the default, and enter a description if desired.
    - Select how you wish a public IP address to be allocated for the load balancer:
-      - To allocate an IP address solely for this load balancer and have it released when this forwarding rule is deleted, leave *Reserve a new static IP address* unchecked, and select **Ephemeral** selected in the pop-up menu.  The IP address allocated to the load balancer will **not** appear in the **External IPs** list for this environment.
+      - To allocate an IP address solely for this load balancer and have it released when this forwarding rule is deleted, leave *Reserve a new static IP address* unchecked, and select **Ephemeral** in the pop-up menu.  The IP address allocated to the load balancer **will not** appear in the **External IPs** list for this environment.
       - To use a public IP address that has already been allocated in this environment, select it from the list.
       - To reserve a new public IP address that will be not be released when the forwarding rule is deleted, select *Reserve a new static IP address*.  The pop-up menu will disappear, and a new IP address will be allocated when the forwarding rule is created.  The IP address will also appear in the **External IPs** list for this environment.
    - Select the protocol to use and which port to listen on for incoming requests.
@@ -84,7 +84,7 @@ The new load balancer is now active and ready for testing with public traffic.  
 
 #### Enabling SSL in the backend
 
-Google Cloud Platform automatically encrypts traffic between the load balancer and the backend services.  However, for addidtional security, GCP supports HTTPS connections between the target proxy and the backend.  The following requirements must be met:
+Google Cloud Platform automatically encrypts traffic between the load balancer and the backend services.  However, for additional security, GCP supports HTTPS connections between the target proxy and the backend.  The following requirements must be met:
 
    - A valid SSL certificate must be installed on each instance in the instance group.  The certificate's common name does not have to match the instance's hostname.
    - Every instance in the group must be configured to use HTTPS.
