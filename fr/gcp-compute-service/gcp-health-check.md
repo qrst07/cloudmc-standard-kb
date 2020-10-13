@@ -1,26 +1,26 @@
 ---
-title: "GCP: Health checks"
-slug: gcp-health-checks
+title: "GCP: Vérifications d'état"
+slug: gcp-verifications-d-etat
 ---
 
 
-Google Cloud Platform health checks allow you to define the criteria for availability of an instance providing a backend service.  A health check is applied to an instance group when configuring a GCP backend service.  Once a health check is active, GCP will send a simple HTTP request to the target instance every 5 seconds.  If the instance responds with an HTTP 200 OK, the instance is considered healthy.  If the request times out after 5 seconds, or if the response is anything other than HTTP 200 OK, the instance is considered unhealthy, and it will not be sent any incoming requests until it returns to a healthy state.
+Les vérifications de l'état de Google Cloud Platform vous permettent de définir les critères de disponibilité d'une instance fournissant un service de backend. Une vérification d'état est appliquée à un groupe d'instances lors de la configuration d'un service de backend GCP. Une fois la vérification de l'état est active, GCP envoie une simple requête HTTP à l'instance cible toutes les 5 secondes. Si l'instance répond avec un HTTP 200 OK, l'instance est considérée comme opérationnel. Si la demande expire au bout de 5 secondes ou si la réponse est autre que HTTP 200 OK, l'instance est considérée comme non opérationnel et elle ne recevra aucune demande entrante tant qu'elle ne retournera pas à un état opérationnel.
 
-Health checks can be managed by navigating to your GCP environment in CloudMC, clicking on the **Compute** tab, and clicking on the **Health checks** item.
+Les vérifications d'état peuvent être gérées en accédant à votre environnement GCP dans CloudMC, en cliquant sur l'onglet **Calcul** et en cliquant sur l'élément **Vérification d'état**.
 
-### Create a health check
+### Créer une vérification d'état
 
-1. From the *Health checks* page, click on the *Add health check* button.
-1. Enter a name, or accept the default, and enter a description if desired.
-1. Select the protocol to use (HTTP or HTTPS) and enter the port number to connect to on the backend instance.
-1. Click *Submit*.  The *Health checks* page will appear, and the new health check will be listed.
+1. À partir de la page *Vérification d'état*, cliquez sur le bouton *Ajouter une vérification d'état*.
+1. Entrez un nom ou acceptez la valeur par défaut, et entrez une description si vous le souhaitez.
+1. Sélectionnez le protocole à utiliser (HTTP ou HTTPS) et saisissez le numéro de port auquel se connecter sur l'instance backend.
+1. Cliquez sur *Valider*. La page *Vérifications d'état* apparaîtra et la nouvelle vérification d'état sera répertoriée.
 
-By default, CloudMC will create a health check that queries the root path ("/").  GCP allows health checks to query other paths.  CloudMC will display the request path of a health check in the listing on the *Health checks* page.
+Par défaut, CloudMC créera une vérification de l'état qui interroge le répertoire racine ("/"). GCP permet aux vérifications d'état d'interroger d'autres chemins d'accès. CloudMC affichera le chemin d'accès de la demande d'une vérification de l'état dans la liste de la page *Vérification d'état*.
 
-### Delete a health check
+### Supprimer une vérification d'état
 
-A health check cannot be deleted if it is in use by a backend service.
+Une vérification d'état ne peut pas être supprimée si elle est utilisée par un service de backend.
 
-1. From the *Health checks* page, find the desired health check and click on the *Action* menu on the far right hand side of the entry.  Click *Delete*.
-1. A confirmation dialogue box will appear.  Click *Submit*.
-1. The health check will be removed from the GCP environment.
+1. À partir de la page *Vérifications d'état*, recherchez la vérification d'état souhaitée et cliquez sur le menu *Action* à l'extrême droite de l'entrée. Cliquez sur *Supprimer*.
+1. Une boîte de dialogue de confirmation apparaît. Cliquez sur *Valider*.
+1. La vérification de l'état sera supprimée de l'environnement GCP.
