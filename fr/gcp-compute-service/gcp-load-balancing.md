@@ -4,7 +4,7 @@ slug: gcp-equilibrage-de-charge
 ---
 
 
-CloudMC prend en charge les fonctionnalités d'équilibrage de charge de Google Cloud Platform, grâce auxquelles le trafic peut être dirigé vers un service de backend fiable avec plusieurs serveurs pour fournir une application.
+CloudMC prend en charge les fonctionnalités d'équilibrage de charge de Google Cloud Platform, grâce auxquelles le trafic peut être dirigé vers un service backend fiable avec plusieurs serveurs pour fournir une application.
 
 L'équilibrage de charge GCP est accessible en accédant à l'environnement GCP souhaité, en cliquant sur l'onglet **Réseautique**, puis en cliquant sur l'élément **Équilibrage de charge**.
 
@@ -13,9 +13,9 @@ L'équilibrage de charge GCP est accessible en accédant à l'environnement GCP 
 - **Groupe d'instances** : Définit le pool d'instances qui fournissent une application ou un microservice.
 - **Vérification d'état** : Définit les critères pour déterminer la disponibilité d'une instance.
 - **Service backend** : Associe un groupe d'instances, une vérification d'état pour les instances de ce groupe, et le protocole à utiliser pour communiquer avec ces instances.
-- **Mappage d'URL** : Spécifie à quel service backend pour envoyer le trafic, en fonction de l'URL de la demande.
+- **Mappage d'URL** : Spécifie à quel service backend envoyer le trafic, en fonction de l'URL de la demande.
 - **Proxy cible** : Écoute le trafic sur le protocole spécifié et transfère ce trafic vers le service backend approprié, en fonction du mappage d'URL spécifié.
-- **Règle de redirection de ports** : Associe une adresse IP qui sert de point de terminaison de l'équilibreur de charge, un protocole et un port, et un proxy cible.
+- **Règle de redirection de ports** : Associe une adresse IP, qui sert de point de terminaison de l'équilibreur de charge, un protocole, un port et un proxy cible.
 - **Google Front End** :  Point d'interface entre GCP et l'Internet public.
 
 Ce modèle permet une flexibilité significative dans les déploiements ainsi que pour la réutilisation des composants :
@@ -37,14 +37,14 @@ Avant de configurer manuellement un nouvel équilibreur de charge, vous devez d�
 
 #### Configuration de l'équilibreur de charge en une étape
 
-Si un service backend a déjà été défini, CloudMC permet la création d'un équilibreur de charge sur une seule page et créera les composants nécessaires en votre nom en utilisant des valeurs par défaut raisonnables.
+Si un service backend a déjà été défini, CloudMC permet la création d'un équilibreur de charge sur une seule page et créera les composants nécessaires en votre nom en utilisant des valeurs raisonnables par défaut.
 
 1. Depuis la page *Équilibreurs de charge*, cliquez sur le bouton *Ajouter équilibreur de charge*.
 1. Entrez un nom pour l'équilibreur de charge ou acceptez la valeur par défaut.
 1. Sélectionnez le service de backend pour cet équilibreur de charge.
 1. Sélectionnez comment attribuer une adresse IP publique. Voir *Créer une règle de transfert* dans la section **Configuration manuelle** ci-dessous pour plus de détails.
 1. Sélectionnez le protocole sur lequel écouter les demandes entrantes.
-    - Si HTTPS est sélectionné, un menu contextuel contenant une liste des certificats SSL téléchargés apparaîtra. Sélectionnez le certificat approprié pour cet équilibreur de charge.
+    - Si HTTPS est sélectionné, une liste contenant les certificats SSL téléchargés apparaîtra. Sélectionnez le certificat approprié pour cet équilibreur de charge.
 1. Cliquez sur *Valider*.
 1. La page *Équilibreurs de charge* s'affiche et le nouvel équilibreur de charge apparaît dans la liste.
 
@@ -63,19 +63,19 @@ Le nouvel équilibreur de charge est maintenant actif et prêt à être testé a
     - Cliquez sur **Proxy cibles**, et cliquez sur le bouton *Ajout proxy cible*
     - Entrez un nom ou acceptez la valeur par défaut, et entrez une description si vous le souhaitez.
     - Sélectionnez le protocole que le proxy cible utilisera pour écouter les demandes entrantes des clients.
-       - Pour prendre en charge les connexions HTTPS des clients, sélectionnez HTTPS. Une liste des certificats SSL disponibles pour CloudMC apparaîtra sous le menu contextuel **Protocole**, et vous devrez sélectionner celui qui convient pour cet équilibreur de charge.
+       - Pour prendre en charge les connexions HTTPS des clients, sélectionnez HTTPS. Une liste des certificats SSL disponibles pour CloudMC apparaîtra sous **Protocole**, et vous devrez sélectionner celui qui convient pour cet équilibreur de charge.
     - Sélectionnez un mappage d'URL. Si aucun mappage d'URL n'a été créé, un mappage d'URL par défaut sera créé en même temps que le proxy cible.
     - Cliquez sur *Valider*.
 1. Créez une règle de redirection de ports.
     - Cliquez sur **Règles de redirection de ports**, et cliquez sur le bouton *Ajouter une règle de redirection de ports*.
     - Entrez un nom ou acceptez la valeur par défaut, et entrez une description si vous le souhaitez.
     - Sélectionnez la manière dont vous souhaitez qu'une adresse IP publique soit attribuée à l'équilibreur de charge :
-      - Pour allouer une adresse IP uniquement à cet équilibreur de charge et la libérer lorsque cette règle de redirection de ports est supprimée, laissez *Réserver une nouvelle adresse IP statique* décochée et sélectionnez **Éphémère** dans le menu contextuel. L'adresse IP allouée à l'équilibreur de charge **n'apparaîtra pas** dans la liste **IPs externes** de cet environnement.
+      - Pour allouer une adresse IP uniquement à cet équilibreur de charge et la libérer lorsque cette règle de redirection de ports est supprimée, laissez *Réserver une nouvelle adresse IP statique* décochée et sélectionnez **Éphémère** dans la liste. L'adresse IP allouée à l'équilibreur de charge **n'apparaîtra pas** dans la liste **IPs externes** de cet environnement.
       - Pour utiliser une adresse IP publique déjà attribuée dans cet environnement, sélectionnez-la dans la liste.
-      - Pour réserver une nouvelle adresse IP publique qui ne sera pas libérée lorsque la règle de redirection de ports soit supprimée, sélectionnez *Réserver une nouvelle adresse IP statique*. Le menu contextuel disparaîtra et une nouvelle adresse IP sera attribuée lors de la création de la règle de redirection de ports. L'adresse IP apparaîtra également dans la liste **IPs externes** de cet environnement.
+      - Pour réserver une nouvelle adresse IP publique qui ne sera pas libérée lorsque la règle de redirection de ports sera supprimée, sélectionnez *Réserver une nouvelle adresse IP statique*. La liste disparaîtra et une nouvelle adresse IP sera attribuée lors de la création de la règle de redirection de ports. L'adresse IP apparaîtra également dans la liste **IPs externes** de cet environnement.
    - Sélectionnez le protocole à utiliser et le port sur lequel écouter les demandes entrantes.
       - Lors de la sélection de HTTPS, un proxy cible configuré pour SSL doit exister dans l'environnement.
-   - Dans le menu contextuel **Proxy cible**, sélectionnez le proxy cible qui a été configuré à l'étape précédente.
+   - Dans la list **Proxy cible**, sélectionnez le proxy cible qui a été configuré à l'étape précédente.
     - Cliquez sur *Valider*.
 1. La page *Règles de redirection de ports* apparaîtra et la nouvelle règle de redirection des ports sera répertoriée.
 1. Le nouvel équilibreur de charge apparaîtra sous l'élément **Équilibreurs de charge**. Il recevra automatiquement le même nom que le mappage d'URL sélectionné.
@@ -92,7 +92,7 @@ Google Cloud Platform chiffre automatiquement le trafic entre l'équilibreur de 
 
 #### Supprimer un équilibreur de charge GCP
 
-La suppression d'un équilibreur de charge GCP supprimera également automatiquement la règle de redirection des ports associée, le proxy cible, le mappage d'URL, et libèrera également les adresses IP éphémères allouées à la règle de redirection de ports.
+La suppression d'un équilibreur de charge GCP supprimera également automatiquement la règle de redirection des ports, le proxy cible et le mappage d'URL associés, et libèrera également les adresses IP éphémères allouées à la règle de redirection de ports.
 
 1. Sur la page *Équilibreurs de charge*, recherchez l'équilibreur de charge souhaité et cliquez sur le menu *Action* à l'extrême droite de l'entrée. Cliquez sur *Supprimer*.
 1. Une boîte de dialogue de confirmation apparaît. Cliquez sur *Soumettre*.
