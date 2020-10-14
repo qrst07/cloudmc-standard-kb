@@ -4,7 +4,7 @@ slug: gcp-verifications-d-etat
 ---
 
 
-Les vérifications de l'état de Google Cloud Platform vous permettent de définir les critères de disponibilité d'une instance fournissant un service de backend. Une vérification d'état est appliquée à un groupe d'instances lors de la configuration d'un service de backend GCP. Une fois la vérification de l'état est active, GCP envoie une simple requête HTTP à l'instance cible toutes les 5 secondes. Si l'instance répond avec un HTTP 200 OK, l'instance est considérée comme opérationnel. Si la demande expire au bout de 5 secondes ou si la réponse est autre que HTTP 200 OK, l'instance est considérée comme non opérationnel et elle ne recevra aucune demande entrante tant qu'elle ne retournera pas à un état opérationnel.
+Les vérifications de l'état de Google Cloud Platform vous permettent de définir les critères de disponibilité d'une instance fournissant un service de backend. Une vérification d'état est appliquée à un groupe d'instances lors de la configuration d'un service de backend GCP. Une fois la vérification de l'état est active, GCP envoie une simple requête HTTP à l'instance cible toutes les 5 secondes. Si l'instance répond avec un HTTP 200 OK, l'instance est considérée comme opérationnel. Si la demande expire au bout de 5 secondes ou si la réponse est autre que HTTP 200 OK, l'instance est considérée comme non opérationnelle et elle ne recevra aucune demande entrante tant qu'elle ne retournera pas à un état opérationnel.
 
 Les vérifications d'état peuvent être gérées en accédant à votre environnement GCP dans CloudMC, en cliquant sur l'onglet **Calcul** et en cliquant sur l'élément **Vérification d'état**.
 
