@@ -63,7 +63,7 @@ The new load balancer is now active and ready for testing with public traffic.  
    - Click on **Target proxies**, and click on the *Add target proxy* button
    - Enter a name, or accept the default, and enter a description if desired.
    - Select the protocol the target proxy will use for listening for incoming requests from clients.
-      - To support HTTPS connections from clients, select HTTPS.  A list of the SSL certificates available to CloudMC will appear beneath the **Protocol**, and you will need to select the appropriate one for this load balancer.
+      - To support HTTPS connections from clients, select HTTPS.  A list of the SSL certificates available to CloudMC will appear beneath **Protocol**, and you will need to select the appropriate one for this load balancer.
    - Select a URL map.  If no URL maps have been created, a default URL map will be created at the same time as the target proxy.
    - Click *Submit*.
 1. Create a forwarding rule.
