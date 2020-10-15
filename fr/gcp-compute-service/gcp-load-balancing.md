@@ -15,7 +15,7 @@ L'équilibrage de charge GCP est accessible en accédant à l'environnement GCP 
 - **Service backend** : Associe un groupe d'instances, une vérification d'état pour les instances de ce groupe, et le protocole à utiliser pour communiquer avec ces instances.
 - **Mappage d'URL** : Spécifie à quel service backend envoyer le trafic, en fonction de l'URL de la demande.
 - **Proxy cible** : Écoute le trafic sur le protocole spécifié et transfère ce trafic vers le service backend approprié, en fonction du mappage d'URL spécifié.
-- **Règle de redirection de ports** : Associe une adresse IP, qui sert de point de terminaison de l'équilibreur de charge, un protocole, un port et un proxy cible.
+- **Règle de redirection de ports** : Associe une adresse IP externe, qui sert de point de terminaison de l'équilibreur de charge, un protocole, un port et un proxy cible.
 - **Google Front End** :  Point d'interface entre GCP et l'Internet public.
 
 Ce modèle permet une flexibilité significative dans les déploiements ainsi que pour la réutilisation des composants :
@@ -42,13 +42,13 @@ Si un service backend a déjà été défini, CloudMC permet la création d'un �
 1. Depuis la page *Équilibreurs de charge*, cliquez sur le bouton *Ajouter équilibreur de charge*.
 1. Entrez un nom pour l'équilibreur de charge ou acceptez la valeur par défaut.
 1. Sélectionnez le service de backend pour cet équilibreur de charge.
-1. Sélectionnez comment attribuer une adresse IP publique. Voir *Créer une règle de transfert* dans la section **Configuration manuelle** ci-dessous pour plus de détails.
+1. Sélectionnez comment attribuer une adresse IP externe. Voir *Créer une règle de transfert* dans la section **Configuration manuelle** ci-dessous pour plus de détails.
 1. Sélectionnez le protocole sur lequel écouter les demandes entrantes.
     - Si HTTPS est sélectionné, une liste contenant les certificats SSL téléchargés apparaîtra. Sélectionnez le certificat approprié pour cet équilibreur de charge.
 1. Cliquez sur *Valider*.
 1. La page *Équilibreurs de charge* s'affiche et le nouvel équilibreur de charge apparaît dans la liste.
 
-Le nouvel équilibreur de charge est maintenant actif et prêt à être testé avec le trafic public. L'adresse IP publique de votre équilibreur de charge est répertoriée à la fois sur les pages *Règles de redirection de ports* et *Équilibreurs de charge*.
+Le nouvel équilibreur de charge est maintenant actif et prêt à être testé avec le trafic public. L'adresse IP externe de votre équilibreur de charge est répertoriée à la fois sur les pages *Règles de redirection de ports* et *Équilibreurs de charge*.
 
 #### Configuration manuelle
 
@@ -69,10 +69,10 @@ Le nouvel équilibreur de charge est maintenant actif et prêt à être testé a
 1. Créez une règle de redirection de ports.
     - Cliquez sur **Règles de redirection de ports**, et cliquez sur le bouton *Ajouter une règle de redirection de ports*.
     - Entrez un nom ou acceptez la valeur par défaut, et entrez une description si vous le souhaitez.
-    - Sélectionnez la manière dont vous souhaitez qu'une adresse IP publique soit attribuée à l'équilibreur de charge :
+    - Sélectionnez la manière dont vous souhaitez qu'une adresse IP externe soit attribuée à l'équilibreur de charge :
       - Pour allouer une adresse IP uniquement à cet équilibreur de charge et la libérer lorsque cette règle de redirection de ports est supprimée, laissez *Réserver une nouvelle adresse IP statique* décochée et sélectionnez **Éphémère** dans la liste. L'adresse IP allouée à l'équilibreur de charge **n'apparaîtra pas** dans la liste **IPs externes** de cet environnement.
-      - Pour utiliser une adresse IP publique déjà attribuée dans cet environnement, sélectionnez-la dans la liste.
-      - Pour réserver une nouvelle adresse IP publique qui ne sera pas libérée lorsque la règle de redirection de ports sera supprimée, sélectionnez *Réserver une nouvelle adresse IP statique*. La liste disparaîtra et une nouvelle adresse IP sera attribuée lors de la création de la règle de redirection de ports. L'adresse IP apparaîtra également dans la liste **IPs externes** de cet environnement.
+      - Pour utiliser une adresse IP externe déjà attribuée dans cet environnement, sélectionnez-la dans la liste.
+      - Pour réserver une nouvelle adresse IP externe qui ne sera pas libérée lorsque la règle de redirection de ports sera supprimée, sélectionnez *Réserver une nouvelle adresse IP statique*. La liste disparaîtra et une nouvelle adresse IP sera attribuée lors de la création de la règle de redirection de ports. L'adresse IP apparaîtra également dans la liste **IPs externes** de cet environnement.
    - Sélectionnez le protocole à utiliser et le port sur lequel écouter les demandes entrantes.
       - Lors de la sélection de HTTPS, un proxy cible configuré pour SSL doit exister dans l'environnement.
    - Dans la list **Proxy cible**, sélectionnez le proxy cible qui a été configuré à l'étape précédente.
@@ -80,7 +80,7 @@ Le nouvel équilibreur de charge est maintenant actif et prêt à être testé a
 1. La page *Règles de redirection de ports* apparaîtra et la nouvelle règle de redirection des ports sera répertoriée.
 1. Le nouvel équilibreur de charge apparaîtra sous l'élément **Équilibreurs de charge**. Il recevra automatiquement le même nom que le mappage d'URL sélectionné.
 
-Le nouvel équilibreur de charge est maintenant actif et prêt à être testé avec le trafic public. L'adresse IP publique de votre équilibreur de charge est répertoriée à la fois sur les pages *Règles de redirection des ports* et *Équilibreurs de charge*.
+Le nouvel équilibreur de charge est maintenant actif et prêt à être testé avec le trafic public. L'adresse IP externe de votre équilibreur de charge est répertoriée à la fois sur les pages *Règles de redirection des ports* et *Équilibreurs de charge*.
 
 #### Activation de SSL dans le backend
 
