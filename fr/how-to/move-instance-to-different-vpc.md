@@ -22,4 +22,4 @@ Après avoir migré vers un autre VPC:
 1. Le menu local *Réseau de destination* répertorie les réseaux disponibles, regroupés par VPC, auxquels l'instance peut être connectée. Sélectionnez le réseau souhaité.
 1. Cochez la case *Je comprends que l'instance sera redémarrée*.
 1. L'instance sera arrêtée, connectée au nouveau réseau et démarrera.
-1. Lorsque l'instance est démarrée et à l'état **Active**, vérifiez la connectivité réseau.
+1. Lorsque l'instance est démarrée et à l'état **Active**, vérifiez la connectivité au réseau.
