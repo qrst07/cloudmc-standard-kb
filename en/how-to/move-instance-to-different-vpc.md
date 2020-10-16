@@ -6,8 +6,13 @@ slug: move-instance-to-different-vpc
 
 Once created, an instance is bound to the zone in which it is deployed.  However, instances can be moved between VPCs in the same zone.
 
-**Note:**  This procedure requires a reboot for the changes to take effect.
-
+After moving to a different VPC:
+   - The instance will be rebooted for the changes to take effect.
+   - The instance will have a new private IP.
+   - All port forwarding rules to the instance will be deleted and will have to be recreated.
+   - The instance will be removed from all load balancer rules in the old VPC.
+   - The instance will be dissociated from any public IP address from the old VPC, and an address will have to be allocated from the new VPC.
+   
 1. Navigate to the environment where the instance is located.
 1. From the *Instances* page, find the desired instance and click on the *Action* menu on the far right hand side of the entry.
 1. Select *Change network*.
