@@ -1,5 +1,5 @@
 ---
-title: "Move an instance to a different VPC"
+title: "CloudStack: Move an instance to a different VPC"
 slug: move-instance-to-different-vpc
 ---
 
