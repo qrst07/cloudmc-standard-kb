@@ -12,7 +12,9 @@ After moving to a different VPC:
    - All port forwarding rules to the instance will be deleted and will have to be recreated.
    - The instance will be removed from all load balancer rules in the old VPC.
    - The instance will be dissociated from any public IP address from the old VPC, and an address will have to be allocated from the new VPC.
-   
+
+### Move the instance
+
 1. Navigate to the environment where the instance is located.
 1. From the *Instances* page, find the desired instance and click on the *Action* menu on the far right hand side of the entry.
 1. Select *Change network*.
