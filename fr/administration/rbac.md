@@ -81,11 +81,11 @@ CloudMC permet à un utilisateur avec le rôle *Administrateur* et plus élevé 
 
 Les rôles primaires sont assignés à l'utilisateur de la page *Modifier l'utilisateur*.
 
-![edit user page, primary role](/assets/rbac-select_primary_role-en.png)
+![edit user page, primary role](/assets/rbac-select_primary_role-fr.png)
 
 Les rôles additionels sont assignés à l'utilisateur en aller à la page *Modifier l'utilisateur* et cliquer sur *Rôles additionels* dans l'encadré.
 
-![additional roles page](/assets/rbac-additional_roles-en.png)
+![additional roles page](/assets/rbac-additional_roles-fr.png)
 
 Les rôles d'environnment sont assignés à l'utilisateur lorsque ajouter des membres à un environnement :
 1. Naviguer au service souhaité.
@@ -93,7 +93,7 @@ Les rôles d'environnment sont assignés à l'utilisateur lorsque ajouter des me
 1. Sélectionner *Gérer les membres*.
 1. Dans la page suivante, saisir le nom de l'utilisateur à ajouter dans le champ *Ajouter un membre à l'environnement*.
 
-![edit environment members page](/assets/rbac-list_of_env_roles-en.png)
+![edit environment members page](/assets/rbac-list_of_env_roles-fr.png)
 
 ---
 [Cas pratiques - Basiques](rbac-use-cases-basic.md)
