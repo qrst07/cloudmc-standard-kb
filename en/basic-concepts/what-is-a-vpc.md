@@ -4,42 +4,43 @@ slug: what-is-a-vpc
 ---
 
 
-<!-- Typically, in most of the public clouds on the market, you deploy your instances on what we like to call a "basic network". In other words, your instance and other tenants' instances are all connected on the same huge network.
+A **virtual private cloud** (VPC) is a logically isolated section in an environment, where you can build a multi-tier application architecture.  VPCs help replicate the functionality of physical networks and are a fundamental part of most cloud-computing environments, acting as the container for multiple isolated networks that communicate with each other.
 
-![Basic network](/assets/what-is-a-vpc-1.png)
+### Overview of VPCs
 
-Network access control is then accomplished by security groups or ACLs at the hypervisor level. We acknowledge that this model is way simpler to deploy for service providers and customers, too, but security and tenant isolation is a big issue.
+VPCs rely on several different virtualized networking components, and they enable a number of cloud-standard features.
 
-In the VPC model, there might be a little more complexity related to management. However, you gain much more control and isolation. For this reason, we selected this model over more traditional methods. -->
+#### Core concepts
 
-A **virtual private cloud** (VPC) is a logically isolated section in an environment, where you can build a multi-tier application architecture.  It is a fundamental part of most cloud-computing environments, acting as the container for multiple isolated networks that communicate with each other.
+- **Network:** For the purposes of this discussion, a network resides inside a VPC, and its IP space is a subnet of the parent VPC.  Resources such as instances are deployed inside a network.  A network is analogous to a physical LAN.
+- **Virtual router:** Each VPC has a virtual router (VR) which facilitates communication between the networks in a VPC.  A virtual router is automatically created and started when you create a VPC.
+- **Network ACLs:** Network access control lists (ACLs) are ordered rules that determine whether traffic is allowed in or out of any network associated with the network ACL.  Network ACLs are applied to the networks inside of a VPC.
+- **Public IPs:** A public IP for the VPC is automatically assigned to the NIC on the virtual router that connects to the public Internet.  Additional public IPs may be allocated to individual networks, see below [WHICH SECTION].
+- **Source NAT:** All traffic leaving a VPC and bound for the public Internet will use the public IP of the VPC.
+- **Static NAT and port forwarding:** When additional public IPs are allocated, a VPC can provide port forwarding and network address translation for traffic from the public Internet to reach instances inside the VPC's networks.  
 
-A VPC is comprised of the following components:
+#### Additional features
 
-<!-- - **VPC:** A VPC acts as a container for multiple isolated networks that can communicate with each other via a virtual router. -->
-- **Network tiers:** A network tier is as an isolated network inside a VPC, whose IP space is a subnet of the parent VPC.  Resources such as instances are deployed inside a network tier.  
-- **Virtual router:** Each VPC has a virtual router (VR) which facilitates communication between the tiers in a VPC.  The virtual router also acts as the gateway to the outside world.  A virtual router is automatically created and started when you create a VPC, and it also provides DNS and DHCP services inside of the VPC.
-<!-- This is invisible to the end user, I don't think it's needed.
-- **Public Gateway:** Traffic to and from the Internet is routed to the VPC through a public gateway. In a VPC, the public gateway is not exposed to the end user; therefore, static routes are not supported for the public gateway. -->
-- **NAT Instance:** An instance that provides Port-Address Translation for instances to access the Internet via the public gateway. <!-- What is this?  Isn't this taken care of by the VR? -->
-- **Network ACL:** Ordered rules that determine whether traffic is allowed in or out of any tier associated with the network ACL
+- **DNS and DHCP services:**  Inside of the VPC, DNS and DHCP services are provided by the virtual router.
+- **Public gateway:** The virtual router acts as the gateway to the outside world.
+- **Private gateway:** All traffic to and from a private network is routed to the VPC through the private gateway. <-- Rewrite this and then point to section on private gateways.
+- **Site-to-site VPN connection:** An IPSec VPN connection between a VPC and a remote datacenter, home network, or co-location facility.
+- **Remote access VPN:** An IKEv2-over-IPSec VPN connection between a VPC and a software client running on a workstation.
+
+### Network connectivity
 
 ![VPC network model](/assets/what-is-a-vpc-2.png)
 
+The VPC network model provides flexible options for establishing network connectivity.  The virtual router, with its defined set of network ACLs, allows traffic to flow within a VPC, between a VPC and the public Internet, between a VPC and remote networks or individual users via VPNs over the public Internet, and between a VPC and remote networks via a private gateway.
 
-### Connectivity options for a VPC
-You can connect your VPC to:
+Because of the flexibility afforded by VPCs, it is important to have a clear understanding of the desired flow of traffic, and defining network ACLs that will ensure this flow.  By default, all networks
 
-- The Internet through the public gateway
-- A corporate datacenter by using a site-to-site VPN connection through a VPN gateway
+A VPC can be connected to:
+
+- The public Internet via the virtual router
+- A corporate datacenter by using a site-to-site VPN connection
 - Both the Internet and your corporate datacenter, using both the public gateway and a VPN gateway
 
-- **Private Gateway:** All traffic to and from a private network is routed to the VPC through the private gateway. <-- Maybe this should be here.
-- **VPN Gateway:** The VPC side of a VPN connection.
-- **Site-to-Site VPN Connection:** A hardware-based VPN connection between your VPC and the datacenter, home network, or co-location facility.
-- **Customer Gateway:** The customer side of a VPN Connection.
-
-### Network architecture in a VPC
 In a VPC, the following network architectures are the basic options:
 
 - VPC with a public gateway only
@@ -47,22 +48,50 @@ In a VPC, the following network architectures are the basic options:
 - VPC with public and private gateways and site-to-site VPN access
 - VPC with a private gateway only and site-to-site VPN access
 
-Network tiers are segmented by means of VLANs. <-- Do I put this here?
-The NIC of each tier acts as its gateway. <-- Do I put this here?
+Networks in a VPC are segmented from each other by means of VLANs. <-- Do I put this here?
+For each network in a VPC, a corresponding NIC and IP exists in the virtual router.
+The NIC of each network acts as its gateway. <-- Do I put this here? Also phrase it better.
 Virtual router directs traffic between the public gateway, VPN gateways, and NAT instances.
-For each tier, a corresponding NIC and IP exists in the virtual router.
 VR provides DNS and DHCP services through its IP.
+VPC has the default network ACLs, default_allow for egress and default_deny for ingress.
+
+### Private gateways
+Only an Operator can add a private gateway
+What does Source NAT enabled do?
+Private gateways are another mechanism for accessing a VPC externally.
+A private gateway gets an interface on the VR
+It's a point-to-point connection to a private network
+All traffic is routed through the VR
+Does not use the public network, it's direct.
+Users can add static routes so that the desired traffic is routed to the private gateway.
+No need for VPN
+Fast and reliable
+Enables VPC to VPC peering across different regions
+
 
 ### VPC network considerations
+
 Consider the following when you create a VPC:
 
-- The maximum number of tiers you can create within a VPC is 4.
-- Each tier must have an unique CIDR in the VPC. The web interface enforces this requirement.
-- A tier belongs to only one VPC.
+- The maximum number of networks you can create within a VPC is 4.
+- Each network must have an unique CIDR in the VPC. The web interface enforces this requirement.
+- A network belongs to only one VPC.
 - When a VPC is created, by default, a Source NAT IP is allocated to it. The Source NAT IP is released only when the VPC is removed.
 - A public IP can be used for only one purpose at a time. If the IP is a Source NAT, it cannot be used for Static NAT or port forwarding.
-- Instances can only have one private IP address, hence be connected to only one tier at the time.
-- The public load-balancing service can be supported by only one tier inside the VPC.
-- If an IP address is assigned to a tier:
-   - That IP can’t be used by more than one tier at a time in the VPC. For example, if you have tiers A and B, and a public IP, you can create a port-forwarding rule by using the IP either for A or B, but not for both.
+- Instances can only have one private IP address, hence be connected to only one network at a time.
+- The public load-balancing service can be supported by only one network inside the VPC, in other words a VPC can have only one network with a public load-balancing service.
+- If an IP address is assigned to a network:
+   - That IP can’t be used by more than one network at a time in the VPC. For example, if you have networks A and B, and a public IP, you can create a port-forwarding rule by using the IP either for A or B, but not for both.
    - That IP can’t be used for Static NAT, load balancing, or port forwarding rules for another guest network inside the VPC.
+
+
+### See also
+
+[Working with VPCs](../cloudstack-compute-service/working-with-vpcs.md)
+[Securing your network](../cloudstack-compute-service/securing-your-network.md)
+Site-to-site VPNs
+Remote access VPNs
+
+### External links
+
+[Wikipedia: Virtual Private Clouds](https://en.wikipedia.org/wiki/Virtual_private_cloud)
