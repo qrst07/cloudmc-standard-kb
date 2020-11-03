@@ -44,7 +44,8 @@ categories:
 #- category: stackpath-service
 #  icon: fa fa-cloud
 #  articles:
-#      - stackpath-placeholder.md
+#      - stackpath-working-with-instances.md
+#      - stackpath-workloads.md
 - category: object-storage-service
   icon: fa fa-hdd-o
   articles:
