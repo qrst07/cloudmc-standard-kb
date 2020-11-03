@@ -41,10 +41,10 @@ categories:
   articles:
       - azure-working-with-instances.md
       - azure-working-with-disks.md
-- category: stackpath-service
-  icon: fa fa-cloud
-  articles:
-      - stackpath-placeholder.md
+#- category: stackpath-service
+#  icon: fa fa-cloud
+#  articles:
+#      - stackpath-placeholder.md
 - category: object-storage-service
   icon: fa fa-hdd-o
   articles:
