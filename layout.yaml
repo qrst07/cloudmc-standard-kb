@@ -10,7 +10,7 @@ categories:
   featured: true
   articles:
       - environments-to-organize-workloads-and-users.md
-      - main-cloud.ca-entities.md
+      - main-cloudmc-entities.md
       - what-is-a-vpc.md
       - what-is-object-storage.md
       - authentication.md
