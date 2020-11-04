@@ -8,7 +8,7 @@ A **virtual private cloud** (VPC) is a logically isolated section in an environm
 
 ### Overview of VPCs
 
-VPCs rely on several different virtualized networking components, and they enable a number of cloud-standard features.
+VPCs rely on several different virtualized networking components, enabling a number of cloud-standard features.
 
 #### Core concepts
 
@@ -27,26 +27,31 @@ VPCs rely on several different virtualized networking components, and they enabl
 - **Site-to-site VPN connection:** An IPSec VPN connection between a VPC and a remote datacenter, home network, or co-location facility.
 - **Remote access VPN:** An IKEv2-over-IPSec VPN connection between a VPC and a software client running on a workstation.
 
-### Network connectivity
+### Network architecture and ACLs
 
 ![VPC network model](/assets/what-is-a-vpc-2.png)
 
-The VPC network model provides flexible options for establishing network connectivity.  The virtual router, with its defined set of network ACLs, allows traffic to flow within a VPC, between a VPC and the public Internet, between a VPC and remote networks or individual users via VPNs over the public Internet, and between a VPC and remote networks via a private gateway.
+The VPC network model provides flexible options for designing network architectures that meet particular needs.  It is clearly desirable for the purpose of application security to isolate instances that are exposed to the public Internet, from instances that will not have connections from the outside world.  More complex applications can benefit from further isolation of networks.
+
+Defining the flow of traffic between networks and VPCs is therefore critical.  In the VPC network model, traffic may flow:
+
+- Within an isolated network in a VPC
+- Between networks in a VPC
+- Between a network in the VPC and the public Internet
+- Between the VPC and an individual user connected via a Remote Access VPN
+- Between the VPC and a remote network connected by a Site-to-site VPN
+- Between the VPC and a remote network connected by a private gateway
+
+The network ACLs defined for a VPC and applied to networks determines what type of traffic is allowed, as well the the direction the traffic is allowed to flow.  By default, all VPCs come with two basic ACLs:
+
+- **default_allow:**  All egress traffic (traffic leaving the network) is allowed, on all ports.
+- **default_deny:**  All ingress traffic (traffic entering the network) is denied, on all ports.
+
+These are defined by the system and cannot be modified or deleted.  You can define your own set of network ACLs
+
+ACLs <-- When defining, what CIDR format is allowed?
 
 Because of the flexibility afforded by VPCs, it is important to have a clear understanding of the desired flow of traffic, and defining network ACLs that will ensure this flow.  By default, all networks
-
-A VPC can be connected to:
-
-- The public Internet via the virtual router
-- A corporate datacenter by using a site-to-site VPN connection
-- Both the Internet and your corporate datacenter, using both the public gateway and a VPN gateway
-
-In a VPC, the following network architectures are the basic options:
-
-- VPC with a public gateway only
-- VPC with public and private gateways
-- VPC with public and private gateways and site-to-site VPN access
-- VPC with a private gateway only and site-to-site VPN access
 
 Networks in a VPC are segmented from each other by means of VLANs. <-- Do I put this here?
 For each network in a VPC, a corresponding NIC and IP exists in the virtual router.
