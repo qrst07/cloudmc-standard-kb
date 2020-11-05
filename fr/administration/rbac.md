@@ -13,7 +13,7 @@ Le contrôle d'accès dans CloudMC est obtenu par un modèle flexible et multi-l
 
 - **Portée :**  L'organisation ou les organisations auxquelles un rôle système s'applique.
 
-- **Organisation :**  Un groupement d'utilisateurs reliés.  Une nouvelle installation de CloudMC vient avec l'organisation **System**.
+- **Organisation :**  Un regroupement d'utilisateurs et de ressources connexes. Une organisation peut contenir des sous-organisations.  Une nouvelle installation de CloudMC vient avec l'organisation **System**.
 
 - **Utilisateur :**  Le compte utilisateur est la façon de se connecter au portal CloudMC.  Un utilisateur est toujours assigné un rôle primaire dans l'organisation où son compte est créé.  Un utilisateur peut avoir des rôles additionels assignés, qui peuvent avoir une porté à une ou plusieurs organisation.
 

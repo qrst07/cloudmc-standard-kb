@@ -13,7 +13,7 @@ Access control in CloudMC is achieved through a flexible, multi-tenant model tha
 
 - **Scope:** The organization or organizations to which a system role is applied.
 
-- **Organization:** A grouping of related end-users.  A base installation of CloudMC comes with the **System** organization.
+- **Organization:** A grouping of related end-users and resources.  An organization may contain sub-organizations.  A base installation of CloudMC comes with the **System** organization.
 
 - **User:**  A user account is how an individual connects to the CloudMC portal.  A user is always assigned a primary system role in the organization the account was created. A user can be assigned additional system roles, which can be scoped to one or more organizations.
 
@@ -95,7 +95,8 @@ Environment roles are assigned to a user when adding members to an environment:
 
 ![edit environment members page](/assets/rbac-list_of_env_roles-en.png)
 
----
+### See also
+
 [Use cases - Basic](rbac-use-cases-basic-en.md)
 
 [Use cases - Advanced](rbac-use-cases-advanced-en.md)
