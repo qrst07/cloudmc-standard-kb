@@ -24,6 +24,6 @@ CloudMC has a powerful user and resource model, providing multi-tenant enterpris
 
 ### See also
 
-[Role-based access controls](../administration/rbac.md)
+   - [Using Environments to organize users & workloads](environments-to-organize-workloads-and-users.md)
 
-[Using Environments to organize users & workloads](environments-to-organize-workloads-and-users.md)
+   - [Role-based access controls](../administration/rbac.md)

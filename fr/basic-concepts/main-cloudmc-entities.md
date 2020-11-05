@@ -24,6 +24,6 @@ CloudMC dispose d'un puissant modèle d'utilisateurs et de ressources, fournissa
 
 ### Voir aussi
 
-[Contrôle d'accès à base de rôles](../administration/rbac.md)
+   - [Utiliser les environnements pour compartimenter les charges de travail et les utilisateurs](environments-to-organize-workloads-and-users.md)
 
-[Utiliser les environnements pour compartimenter les charges de travail et les utilisateurs](environments-to-organize-workloads-and-users.md)
+   - [Contrôle d'accès à base de rôles](../administration/rbac.md)
