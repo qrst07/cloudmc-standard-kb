@@ -13,7 +13,7 @@ El control de acceso en CloudMC se alcanza a través un modelo flexible y multi-
 
 - **Alcance:** La organización o organizaciones a cual un rol de sistema se aplica.
 
-- **Organización:** Una agrupación de usuarios relacionados.  Una instalación base de CloudMC ya viene con la organización **System**.
+- **Organización:** Una agrupación de recursos y usuarios relacionados. Una organización puede contener sub-organizaciones.  Una instalación base de CloudMC ya viene con la organización **System**.
 
 - **Usuario:** Una cuenta usuaria es la manera que un individuo se connecta al portal de CloudMC.  Un usuario siempre está asignado un rol de sistema primario en la organización donde se creó la cuenta.  Un usuario puede ser asignado roles de sistema adicionales, y que pueden ser recorridos a una o más organizaciones.
 
