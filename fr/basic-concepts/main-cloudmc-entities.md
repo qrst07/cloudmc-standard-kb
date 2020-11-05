@@ -4,16 +4,26 @@ slug: entites-principales-cloudmc
 ---
 
 
-Une **organisation** est l’entité à laquelle sont facturés les services consommés sur l’infrastructure en CloudMC. Elle englobe différent attributs qui sont communs à tous ses utilisateurs (ex.: page d’entrée, logo d’entreprise, type d’authentication, politiques en vigueur, etc).
+CloudMC dispose d'un puissant modèle d'utilisateurs et de ressources, fournissant des fonctionnalités multi-locataires au niveau de l'entreprise pour connecter une variété de services différents. Voici une liste des principales entités qui fournissent la fonctionnalité CloudMC.
 
-Un **utilisateur** est une personne qui accède la console de CloudMC pour gérer ses ressources virtuelles.
+### Entités de CloudMC
 
-Un **département** est un regroupement hiérarchique d’utilisateurs à l’intérieur d’une organisation. Il n’est pas obligatoire d’effectuer ce groupement, par contre il peut faciliter l’exécution de certaines tâches nécessitant la sélection de multiples utilisateurs qui travaillent ensemble.
+- **Organisation :** Un regroupement d'utilisateurs finaux et de ressources connexes. Une organisation peut contenir des sous-organisations.
 
-Un **rôle** est une collection nommée de permissions à l’intérieur d’une organisation. Un utilisateur peut avoir plusieurs rôles (ils sont additifs) afin de déterminer ce qu’il a le droit de faire dans la console de CloudMC. Voir [Contrôle d'accès à base de rôles](../administration/rbac.md) pour en apprendre davantage sur ce concept.
+- **Environnement :** Une unité logique au sein d'une organisation, utilisée pour isoler et regrouper les ressources en toute sécurité.
 
-Un **service** est une abstraction à travers laquelle un utilisateur acquiert et interagit avec ses ressources virtuelles.
+- **Service :** Une abstraction à travers laquelle un utilisateur acquiert et interagit avec des ressources virtuelles.
 
-Un **environnement** est un carré de sable au sein d’un service où les utilisateurs peuvent allouer et partager des ressources. Voyez [Les environnements pour compartimenter charges de travail et utilisateurs](environments-to-organize-workloads-and-users.md) pour en savoir plus sur ce concept.
+- **Application :** Une application externe qui a été configurée pour l'accès via Master Portal.
 
-Les **permissions** donnent accès à certaines fonctionalités de CloudMC. Il existe deux types de permissions. Les **permissions de système** contrôlent l’accès aux fonctions intrinsèques de la console CloudMC, tandis que les **permissions d’environnement** donnent accès aux ressources virtuelles et opérations spécifiques d’un service.
+- **Utilisateur :** Un compte utilisateur est la manière dont un individu se connecte à CloudMC.
+
+- **Permission :** Une autorisation d'exécuter une tâche particulière.
+
+- **Rôle :** Une collection nommée d'autorisations qui régissent l'accès aux fonctionnalités de la console CloudMC, ainsi que l'accès aux ressources d'un service.
+
+### Voir aussi
+
+[Contrôle d'accès à base de rôles](../administration/rbac.md)
+
+[Utiliser les environnements pour compartimenter les charges de travail et les utilisateurs](environments-to-organize-workloads-and-users.md)
