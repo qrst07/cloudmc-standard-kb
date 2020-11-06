@@ -4,7 +4,7 @@ slug: entites-principales-cloudmc
 ---
 
 
-CloudMC dispose d'un puissant modèle d'utilisateurs et de ressources, fournissant des fonctionnalités multi-locataires au niveau de l'entreprise pour connecter une variété de services différents. Voici une liste des principales entités qui fournissent la fonctionnalité CloudMC.
+CloudMC dispose d'un puissant modèle d'utilisateurs et de ressources, fournissant des fonctionnalités multi-locataires au niveau de l'entreprise pour connecter une variété de services différents. Voici une liste des principales entités qui fournissent la fonctionnalité et la sécurité dans CloudMC.
 
 ### Entités de CloudMC
 

@@ -4,7 +4,7 @@ slug: main-cloudmc-entities
 ---
 
 
-CloudMC has a powerful user and resource model, providing multi-tenant enterprise-level features for connecting a variety of different services.  The following is a list of the main entities that provide CloudMC functionality.
+CloudMC has a powerful user and resource model, providing multi-tenant enterprise-level features for connecting a variety of different services.  The following is a list of the main entities that provide functionality and security in CloudMC.
 
 ### CloudMC entities
 
@@ -24,6 +24,6 @@ CloudMC has a powerful user and resource model, providing multi-tenant enterpris
 
 ### See also
 
-   - [Using Environments to organize users & workloads](environments-to-organize-workloads-and-users.md)
+   - [Using environments to organize users and workloads](environments-to-organize-workloads-and-users.md)
 
    - [Role-based access controls](../administration/rbac.md)
