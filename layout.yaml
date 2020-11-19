@@ -19,6 +19,7 @@ categories:
   featured: true
   articles:
 #      - guide-for-resellers.md
+      - custom-domains.md
 - category: cloudstack-compute-service
   icon: fa fa-cloud
   articles:
