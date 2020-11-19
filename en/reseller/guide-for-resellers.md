@@ -16,21 +16,3 @@ CloudMC is a powerful, API-based edge orchestration platform.
 [Role-based access control](../administration/rbac.md)
 
 [Generate a usage report](../reporting/generate-a-usage-report.md)
-
-
-Summary
-
-Required permissions
-
-Navigate to
-
-### First section (feature)
-
-body...
-
-#### Subsection
-
-
-### See also
-
-### External links
