@@ -39,7 +39,9 @@ The first step when integrating with an identity provider is to configure a clie
 ![Select identity provider](/assets/oidc-add-2-en.png)
 1. Fields for the information required to connect to the identity provider will appear.
 ![Details for identity provider](/assets/oidc-add-3-en.png)
-1. Enter the required details you obtained from the identity provider, then click *Submit*.
+1. Enter the required details you obtained from the identity provider.
+1. Optionally, if you have multiple external identity providers configured, you may control the order in which they appear on the login page by assigning them a **display order**.  The providers appear sorted in ascending order of their display order values.
+1. Click *Submit*.
 1. The *Authentication* page appears and the new provider is listed.  Additionally, the CloudMC login page now presents users with a button to sign on with the identity provider.
 
 #### Submit callback URL to provider
