@@ -33,12 +33,12 @@ The first step when integrating with an identity provider is to configure a clie
 #### Configure CloudMC
 
 1. Click *Add identity provider*.  The *Add identity provider* page will appear.
-![Identity provider page](/assets/1-oidc-add-en.png)
+![Identity provider page](/assets/oidc-add-1-en.png)
 1. *OpenID Connect (OIDC)* is currently the only option for **Type**.
 1. Choose a provider from the pop-up menu labeled **Provider**.  Any identity provider that has already been configured will appear greyed-out in the menu.
-![Select identity provider](/assets/2-oidc-add-en.png)
+![Select identity provider](/assets/oidc-add-2-en.png)
 1. Fields for the information required to connect to the identity provider will appear.
-![Details for identity provider](/assets/3-oidc-add-en.png)
+![Details for identity provider](/assets/oidc-add-3-en.png)
 1. Enter the required details you obtained from the identity provider, then click *Submit*.
 1. The *Authentication* page appears and the new provider is listed.  Additionally, the CloudMC login page now presents users with a button to sign on with the identity provider.
 
@@ -60,7 +60,7 @@ This setting is applied at the organization level, allowing an organization to o
 1. Locate the desired organization, and click on the three-dot *Action* menu on the far right of the entry.
 1. Select *Manage security*.
 1. The *Security* screen  will appear.  Click on the *Edit* button at the upper right of the page.
-1. Check the box titled **Allow automatic end-user account creation upon successful OIDC login**.  Two section will appear, **Associated domains** and **Primary role**.
+1. Check the box titled **Allow automatic end-user account creation upon successful OIDC login**.  Two sections will appear, **Associated domains** and **Primary role**.
 1. Select one or more domains to enable automatic account creation.
 1. Select the role which automatically created accounts will be assigned.
 1. Click *Submit* to save the configuration.  Automatic end-user account creation is now enabled.
