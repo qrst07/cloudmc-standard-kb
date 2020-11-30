@@ -63,4 +63,5 @@ Ce paramètre est appliqué au niveau de l'organisation, ce qui permet à une or
 1. Cochez la case **Autoriser la création automatique de compte d'utilisateur après une connexion OIDC réussie**. Deux sections apparaîtront, **Domaines associés** et **Rôle principal**.
 1. Sélectionnez un ou plusieurs domaines pour activer la création automatique de compte.
 1. Sélectionnez le rôle auquel les comptes créés automatiquement seront attribués.
+   - Seulement les rôles correspondant à votre niveau de privilège et au-dessous seront répertoriés. Cela permet d'éviter une élévation involontaire des privilèges.
 1. Cliquez sur *Valider* pour enregistrer la configuration. La création automatique de compte d'utilisateur final est désormais activée.
