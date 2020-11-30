@@ -8,7 +8,7 @@ slug: openid-connect
 
 OpenID Connect (OIDC) is an authentication system based on OAuth 2.0, and is currently the most widely adopted external authentication system.
 
-With OpenID Connect configured, an individual can log into their CloudMC account using valid credentials from an external identity provider. Additionally, if an organization has configured a custom domain, CloudMC can optionally create a new user account automatically for an individual who logs in successfully using the external identity provider, based on the domain of the email address the user is logging in with.  This facilites easier user management for enterprises and integration into a single sign-on environment.
+With OpenID Connect configured, an individual can log into their CloudMC account using valid credentials from an external identity provider. Additionally, if an organization has configured a custom domain, CloudMC can optionally create a new user account automatically for an individual who logs in successfully using the external identity provider, based on the domain of the email address the user is logging in with.  This facilites easier user management for enterprises and integration into a single sign-on (SSO) environment.
 
 When OIDC login is configured, a button will appear on the login page allowing a user to initiate a login via the external provider.  Importantly, if a CloudMC account is configured to use two-factor authentication, the user will be asked for their 2FA token after a successful OIDC login.
 
@@ -25,7 +25,7 @@ Navigate to *System* -> *Authentication* to get to the *Authentication* page, wh
 
 #### Configure identity provider
 
-To integrate with an identity provider, you will need to configure a client for CloudMC in your OpenID Connect identity provider.  Follow the instructions for configuring your identity provider, and obtain the client credentials required by CloudMC:
+The first step when integrating with an identity provider is to configure a client for CloudMC within your OpenID Connect identity provider.  Follow your identity provider's procedure for configuring a client, and obtain the client credentials required by CloudMC:
    - Issuer URL
    - Client ID
    - Client secret
@@ -34,7 +34,7 @@ To integrate with an identity provider, you will need to configure a client for 
 
 1. Click *Add identity provider*.  The *Add identity provider* page will appear.
 ![Identity provider page](/assets/1-oidc-add-en.png)
-1. OpenID Connect (OIDC) is currently the only option for **Type**.
+1. *OpenID Connect (OIDC)* is currently the only option for **Type**.
 1. Choose a provider from the pop-up menu labeled **Provider**.  Any identity provider that has already been configured will appear greyed-out in the menu.
 ![Select identity provider](/assets/2-oidc-add-en.png)
 1. Fields for the information required to connect to the identity provider will appear.
@@ -52,7 +52,9 @@ To complete the integration with the identity provider, CloudMC will generate a 
 
 ### Automatic account creation
 
-If desired, CloudMC can automatically create an account for an individual who is signing in with valid credentials from the external identity provider but who does not already have an account in CloudMC.  This setting is applied at the organization level, allowing an organization to opt out of this feature.  The organization must have at least one custom domain configured.  CloudMC will match domain name of the email address used to log in against the selected custom domain to determine the organization in which to create the end-user account.
+If desired, CloudMC can automatically create an account for an individual who is signing in with valid credentials from the external identity provider but who does not already have an account in CloudMC.
+
+This setting is applied at the organization level, allowing an organization to opt out of this feature.  The organization must have at least one custom domain configured.  CloudMC will match domain name of the email address used to log in against the selected custom domain to determine the organization in which to create the end-user account.
 
 1. Click on *Organizations* in the sidebar.
 1. Locate the desired organization, and click on the three-dot *Action* menu on the far right of the entry.
