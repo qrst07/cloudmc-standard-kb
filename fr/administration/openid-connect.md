@@ -33,12 +33,12 @@ La première étape lors de l'intégration avec un fournisseur d'identité consi
 #### Configurer CloudMC
 
 1. Cliquez sur *Ajouter un fournisseur d'identité*. La page *Ajouter un fournisseur d'identité* apparaîtra.
-![Page du fournisseur d'identité](/assets/1-oidc-add-en.png)
+![Page du fournisseur d'identité](/assets/oidc-add-1-fr.png)
 1. *OpenID Connect (OIDC)* est actuellement la seule option pour **Type**.
 1. Choisissez un fournisseur dans le menu contextuel intitulé **Fournisseur**. Tout fournisseur d'identité qui a déjà été configuré apparaîtra grisé dans le menu.
-![Sélectionner le fournisseur d'identité](/assets/2-oidc-add-en.png)
+![Sélectionner le fournisseur d'identité](/assets/oidc-add-2-fr.png)
 1. Les champs des informations requises pour se connecter au fournisseur d'identité apparaîtront.
-![Détails du fournisseur d'identité](/assets/3-oidc-add-en.png)
+![Détails du fournisseur d'identité](/assets/oidc-add-3-fr.png)
 1. Saisissez les informations requises que vous avez obtenues auprès du fournisseur d'identité, puis cliquez sur *Valider*.
 1. La page *Authentification* apparaît et le nouveau fournisseur est répertorié. De plus, la page de connexion CloudMC présente désormais aux utilisateurs un bouton pour se connecter avec le fournisseur d'identité.
 
