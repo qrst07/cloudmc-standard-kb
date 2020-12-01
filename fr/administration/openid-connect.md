@@ -56,7 +56,7 @@ Pour compléter l'intégration avec le fournisseur d'identité, CloudMC génére
 
 Si vous le souhaitez, CloudMC peut créer automatiquement un compte pour une personne qui se connecte avec des informations d'identification valides du fournisseur d'identité externe mais qui n'a pas déjà de compte dans CloudMC.
 
-Ce paramètre est appliqué au niveau de l'organisation, ce qui permet à une organisation de désactiver cette fonctionnalité. L'organisation doit avoir au moins un domaine personnalisé configuré. CloudMC fera correspondre le nom de domaine de l'adresse e-mail utilisée pour se connecter au domaine personnalisé sélectionné pour déterminer l'organisation dans laquelle créer le compte d'utilisateur final.
+Ce paramètre est appliqué au niveau de l'organisation, ce qui permet à une organisation de désactiver cette fonctionnalité. L'organisation doit avoir au moins un [domaine personnalisé](../reseller/custom-domains.md) configuré. CloudMC fera correspondre le nom de domaine de l'adresse e-mail utilisée pour se connecter au domaine personnalisé sélectionné pour déterminer l'organisation dans laquelle créer le compte d'utilisateur final.
 
 1. Cliquez sur *Organisations* dans la barre latérale.
 1. Localisez l'organisation souhaitée et cliquez sur le menu à trois points *Action* à l'extrême droite de l'entrée.
