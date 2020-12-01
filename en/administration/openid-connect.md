@@ -65,5 +65,5 @@ This setting is applied at the organization level, allowing an organization to o
 1. Check the box titled **Allow automatic end-user account creation upon successful OIDC login**.  Two sections will appear, **Associated domains** and **Primary role**.
 1. Select one or more domains to enable automatic account creation.
 1. Select the role which automatically created accounts will be assigned.
-  -  Only roles at your level of privilege and below will be listed.  This is to prevent unintended privilege escalation.
+-  Only roles at your level of privilege and below will be listed.  This is to prevent unintended privilege escalation.
 1. Click *Submit* to save the configuration.  Automatic end-user account creation is now enabled.
