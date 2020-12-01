@@ -56,7 +56,7 @@ To complete the integration with the identity provider, CloudMC will generate a 
 
 If desired, CloudMC can automatically create an account for an individual who is signing in with valid credentials from the external identity provider but who does not already have an account in CloudMC.
 
-This setting is applied at the organization level, allowing an organization to opt out of this feature.  The organization must have at least one custom domain configured.  CloudMC will match domain name of the email address used to log in against the selected custom domain to determine the organization in which to create the end-user account.
+This setting is applied at the organization level, allowing an organization to opt out of this feature.  The organization must have at least one [custom domain](../reseller/custom-domains.md) configured.  CloudMC will match domain name of the email address used to log in against the selected custom domain to determine the organization in which to create the end-user account.
 
 1. Click on *Organizations* in the sidebar.
 1. Locate the desired organization, and click on the three-dot *Action* menu on the far right of the entry.
