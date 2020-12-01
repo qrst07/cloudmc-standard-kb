@@ -1,6 +1,6 @@
 ---
 title: "Authentification avec OpenID Connect"
-slug: openid-connect
+slug: openid-connect-fr
 ---
 
 
