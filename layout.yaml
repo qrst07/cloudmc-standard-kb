@@ -18,7 +18,7 @@ categories:
   icon: fa fa-handshake-o
   featured: true
   articles:
-      - guide-for-resellers.md
+#      - guide-for-resellers.md
       - custom-domains.md
 - category: cloudstack-compute-service
   icon: fa fa-cloud
