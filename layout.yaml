@@ -51,6 +51,7 @@ categories:
   icon: fa fa-cloud
   articles:
       - stackpath-workloads.md
+      - stackpath-overview-workloads.md
 #      - stackpath-working-with-instances.md
 - category: object-storage-service
   icon: fa fa-hdd-o
