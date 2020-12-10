@@ -47,11 +47,12 @@ categories:
   articles:
       - azure-working-with-instances.md
       - azure-working-with-disks.md
-#- category: stackpath-service
-#  icon: fa fa-cloud
-#  articles:
+- category: stackpath-service
+  icon: fa fa-cloud
+  articles:
+      - stackpath-workloads.md
+      - stackpath-overview-workloads.md
 #      - stackpath-working-with-instances.md
-#      - stackpath-workloads.md
 - category: object-storage-service
   icon: fa fa-hdd-o
   articles:

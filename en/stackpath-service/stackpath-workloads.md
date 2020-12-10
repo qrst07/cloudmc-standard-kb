@@ -3,17 +3,12 @@ title: "StackPath Service:  Workloads"
 slug: stackpath-workloads
 ---
 
+
 <!-- Overall structure:
 1) Should this be split into multiple articles?
 2) The SP// docs have two separate sections for Container vs VM deployments.  Here I've merged the two.  Which works better?
-3) Can I use the word "instances" to represent both VMs and containers?
+3) Can I use the word "instances" to represent both VMs and containers? <- I'm choosing to add a note that instance == either container instance or VM instance.
 -->
-
-A StackPath **workload** represents the collection of resources needed to deliver an application.  A workload consists of either a virtual machine (or instance) or a container that can be deployed to one or more of StackPath's **edge locations** (points of presence, or **PoPs**).  A given workload can have one or more VMs or containers deployed at each PoP, all using the same image.  Single VMs are built using an operating system image. Containers are built using a Docker image pulled from a registry such as DockerHub or other service.
-
-At deployment, each VM or container is given a root volume whose size is defined by the image.  If additional storage is needed, a persistent volume may be attached to each instance or container in a workload.  This is particularly useful for containers, whose root volume does **not** persist.
-
-Every instance or container in a workload gets a private and public IP address upon creation.  [Network policies](stackpack-network-policies.md) control access to the instances or containers in a workload.  For more complex deployments, an **Anycast IP address** can be added at the time of creation of the workload, and will remain assigned to the workload for the duration of its lifetime.  Anycast IP addresses are a feature of StackPath and provide optimal routing for traffic, essentially behaving as a global load balancer for your workload.  <!-- Need to show where Anycast IPs send traffic.  This is not clear to me at this time. -->
 
 To create, modify, or delete a StackPath workload, an account with the *User* role must be a member of the environment which contains the workload, and also have the *Editor* or *Owner* environment role assigned.  An account with the *Administrator* role or higher may create, modify, or delete workloads in any environment.
 
@@ -74,13 +69,3 @@ Deleting a workload will destroy all instances, containers, network policies, an
 1. From the **Workloads** tab, find the desired workload and click on the three-dot *Action* menu on the right side of the entry.  A workload may also be deleted from its *Workload details* page by clicking on the three-dot *Action* menu at the top right of the page, and clicking *Delete*.
 1. A dialogue box will appear, asking for confirmation to delete the workload.  Click *Submit*.
 1. The workload will change to the **Disabled** state.  When the workload has been deleted, it will disappear from the **Workloads** tab.
-
-### External links
-
-[Create and Manage Virtual Machines, Containers, and Workloads](https://support.stackpath.com/hc/en-us/articles/360022756051-Create-and-Manage-Virtual-Machines-Containers-and-Workloads)
-
-[Edge Computing: Using Global Anycast IP Addresses](https://support.stackpath.com/hc/en-us/articles/360022801751-Edge-Computing-Using-Global-Anycast-IP-Addresses)
-
-[Learn about Environment Variables](https://support.stackpath.com/hc/en-us/articles/360022768891)
-
-[Edge Computing:  Enabling Auto-Scaling on Your Workload](https://support.stackpath.com/hc/en-us/articles/360034604611-Edge-Computing-Enabling-Auto-Scaling-on-Your-Workload)
