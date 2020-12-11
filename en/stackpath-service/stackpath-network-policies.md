@@ -15,7 +15,8 @@ To access network policies, navigate to your StackPath environment and click on 
 
 ### Creating a network policy
 
-
+1. From the **Network policies** screen, clicking click on the button labeled *Add network policy rule*.
+1.
 
 ### See also
 
