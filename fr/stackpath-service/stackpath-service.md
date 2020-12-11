@@ -1,3 +1,3 @@
 ---
-name: Guide pour les revendeurs
+name: Service de StackPath
 ---
