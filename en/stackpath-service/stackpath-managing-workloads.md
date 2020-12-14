@@ -4,6 +4,8 @@ slug: stackpath-managing-workloads
 ---
 
 
+<!-- General note:  UI changes have been made for hiding the optional attributes as well as for displaying the Anycast IP.  I need to go back and update the articles for these changes, both languages. -->
+
 To create, modify, or delete a StackPath workload, an account with the *User* role must be a member of the environment which contains the workload, and also have the *Editor* or *Owner* environment role assigned.  An account with the *Administrator* role or higher may create, modify, or delete workloads in any environment.
 
 To access workloads, navigate to your StackPath environment and click on the **Workloads** tab.
@@ -20,14 +22,14 @@ To access workloads, navigate to your StackPath environment and click on the **W
 
 #### Select image
 
-1. If the type of workload is **Virtual machine**, select an operating system image from the popup list labeled **OS image**.
+1. If the type of workload is **Virtual machine** (**VM**), select an operating system image from the popup list labeled **OS image**.
 1. If the type of workload is **Container**, enter into the text box labled **OS image** the URL from which the container image should be pulled.  The format of the URL should be `URL/imagename:tag`, where *tag* indicates the version to pull. If *tag* is omitted, `default` is assumed.  If credentials are required for the remote location, check the box labeled *Add image pull credentials*.  Fields for the credentials will appear.
 
 #### Environment variables and network
 
 1. If the type of workload is **Container**, environment variables may be defined and made accessible to the container.  These values are defined at runtime or during deployment, and are presented within the container as standard environment variables. <!-- The SP// docs seem to indicate that environment variables are available to both containers and to instances.  Also, how can multiple variables be defined in the Web UI? -->
    - **Environment variable key and value**:  Key value pairs are made available to all instances.  
-   - **Secret environment key and value**: Same as environment variables but can be used to store credentials securely.
+   - **Secret environment variable key and value**: Same as environment variables but can be used to store credentials securely.
 1. Select the VPC to use for deploying the workload.
    - At this time, workloads are created only in the default VPC.
 1. If an Anycast IP address is desired, mark the checkbox labeled *Add Anycast IP address*.
@@ -58,7 +60,6 @@ To access workloads, navigate to your StackPath environment and click on the **W
    - *CPU utilization*: StackPath will monitor the CPU utilization of each instance or container.  When utilization exceeds the specified threshold, a new VM or container will be deployed to absorb the increased load.  When CPU utilization drops to 10% below this threshold or lower, StackPath will scale down instances after 5 minutes have passed since the last auto-scaling event.
    - *Min instances per PoP*: The minimum number of VMs or containers to have deployed at any time.
    - *Max instances per PoP*: The maximum number of VMs or containers to deploy when scaling up.
-
 
 Once all options have been selected, click *Submit*. The **Workloads** tab will appear, and the new workload will be listed in the **Active** state.
 
