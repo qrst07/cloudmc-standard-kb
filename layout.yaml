@@ -36,12 +36,12 @@ categories:
 - category: gcp-compute-service
   icon: fa fa-cloud
   articles:
+      - gcp-load-balancing.md
       - gcp-working-with-instances.md
       - gcp-working-with-disks.md
       - gcp-instance-groups.md
       - gcp-health-check.md
       - gcp-ssl-certs.md
-      - gcp-load-balancing.md
 - category: azure-compute-service
   icon: fa fa-cloud
   articles:
