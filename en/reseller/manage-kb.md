@@ -61,7 +61,7 @@ The knowledge base repository has the following structure:
    |- ...                       (And so on)
 ```
 
-The `README.md` file is a requirement of the Git tool.  It can be an empty, zero-byte file.
+The `README.md` file is a requirement of the Git tool.  It can be an empty, zero-byte file. 
 
 #### The assets directory
 

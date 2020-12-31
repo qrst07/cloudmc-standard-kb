@@ -10,7 +10,7 @@ La base de connaissances de CloudMC est la source d'informations relatives au fo
 
 La base de connaissances est accessible depuis l'interface utilisateur en allant dans le menu Aide et en cliquant sur Centre d'aide. L'authentification n'est pas nécessaire pour accéder au Centre d'aide, qui est également accessible directement via son URL.
 
-Le contenu est stocké dans un dépôt Git et est récupéré manuellement pour le stockage local par CloudMC. Tous les articles sont rédigés au format Markdown standard et peuvent inclure des images, des références à d'autres articles de la base de connaissances, des liens externes et d'autres fonctionnalités. Une catégorie donnée peut être marquée comme **en vedette** (**featured**, en anglais) et aura une icône plus grande et sera disposée au-dessus des autres catégories dans le Centre d'aide.
+Le contenu est stocké dans un dépôt Git et est récupéré manuellement pour le stockage local par CloudMC. Tous les articles sont rédigés au format Markdown standard et peuvent inclure des images, des références à d'autres articles de la base de connaissances, des liens externes et d'autres fonctionnalités. Une catégorie donnée peut être marquée comme **en vedette** (*featured*, en anglais) et aura une icône plus grande et sera disposée au-dessus des autres catégories dans le Centre d'aide.
 
 Les revendeurs et administrateurs travaillant avec la base de connaissances CloudMC auront besoin d'une connaissance de base des outils Git et du format Markdown.
 
@@ -63,7 +63,7 @@ Le dépôt de la base de connaissances a la structure suivante:
 
 Le fichier `README.md` est une exigence de l'outil Git. Il peut s'agir d'un fichier vide de zéro octet.
 
-#### Le répertoire ≪assets≫
+#### Le répertoire ≪ assets ≫
 
 CloudMC recherchera dans le répertoire `assets` les images référencées à partir des fichiers d'article. Les formats d'image pris en charge incluent JPEG, GIF et PNG.
 
@@ -75,7 +75,7 @@ Si une langue activée n'a pas de répertoire de niveau supérieur dans le dép�
 
 Les noms de tous les fichiers et répertoires sont en anglais, quelle que soit la langue du contenu. Ceci est arbitraire et peut être modifié à volonté. La seule exigence est que les noms de fichier et de répertoire soient les mêmes pour toutes les langues, conformément à leur spécification dans le fichier `layout.yaml`.
 
-#### Catégories
+#### Les catégories
 
 Chaque catégorie a son propre répertoire dans un répertoire de langue. Le nom de ce répertoire doit correspondre au nom de la catégorie dans `layout.yaml`.
 
