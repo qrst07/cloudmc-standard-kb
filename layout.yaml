@@ -20,6 +20,7 @@ categories:
   articles:
 #      - guide-for-resellers.md
       - custom-domains.md
+      - manage-kb.md
 - category: cloudstack-compute-service
   icon: fa fa-cloud
   articles:
