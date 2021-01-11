@@ -20,7 +20,7 @@ To manage the knowledge base, click on *Administration* in the sidebar on the le
 
 ### Quick Start
 
-1. Git clone the CloudMC standard knowledge base repository to your local workstation:  https://github.com/cloudops/cloudmc-standard-kb <!-- Rephrase this in v2 -->
+1. Git clone the CloudMC standard knowledge base repository to your local workstation:  https://github.com/cloudops/cloudmc-standard-kb <!-- Rephrase this in v2, and also rename directory!!!! Also, git remote remove origin then git remote add origin ...-->
 1. Explore the top-level directory structure:
    - The `assets` directory contains all images.
    - Each supported language has a directory, for example `en` for English-language content, and `fr` for French.
@@ -61,7 +61,7 @@ The knowledge base repository has the following structure:
    |- ...                       (And so on)
 ```
 
-The `README.md` file is a requirement of the Git tool.  It can be an empty, zero-byte file. 
+The `README.md` file is a requirement of the Git tool.  It can be an empty, zero-byte file.
 
 #### The assets directory
 
