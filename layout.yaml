@@ -13,7 +13,6 @@ categories:
       - main-cloudmc-entities.md
       - what-is-a-vpc.md
       - what-is-object-storage.md
-      - authentication.md
 - category: reseller
   icon: fa fa-handshake-o
   featured: true
@@ -21,6 +20,8 @@ categories:
 #      - guide-for-resellers.md
       - custom-domains.md
       - manage-kb.md
+      - branding.md
+      - authentication.md
 - category: cloudstack-compute-service
   icon: fa fa-cloud
   articles:
@@ -63,6 +64,10 @@ categories:
       - manage-my-objects-using-the-swift-command-line-client.md
       - manage-my-objects-using-the-object-storage-api.md
       - manage-my-objects-using-the-self-service-portal.md
+- category: macrometa-service
+  icon: fa fa-cloud
+  articles:
+     - macrometa-overview.md
 - category: reporting
   icon: fa fa-signal
   articles:
@@ -74,7 +79,6 @@ categories:
       - enable-two-factor-authentication.md
 #      - single-entrypoint.md
       - display-dates-in-your-preferred-time-zone.md
-      - branding.md
       - manage-users.md
       - rbac.md
       - rbac-use-cases-basic.md

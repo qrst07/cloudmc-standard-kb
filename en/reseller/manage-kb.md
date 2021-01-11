@@ -20,7 +20,7 @@ To manage the knowledge base, click on *Administration* in the sidebar on the le
 
 ### Quick Start
 
-1. Git clone the CloudMC standard knowledge base repository to your local workstation:  https://github.com/cloudops/cloudmc-standard-kb <!-- Rephrase this in v2 -->
+1. Git clone the CloudMC standard knowledge base repository to your local workstation:  https://github.com/cloudops/cloudmc-standard-kb <!-- Rephrase this in v2, and also rename directory!!!! Also, git remote remove origin then git remote add origin ...-->
 1. Explore the top-level directory structure:
    - The `assets` directory contains all images.
    - Each supported language has a directory, for example `en` for English-language content, and `fr` for French.
@@ -61,7 +61,7 @@ The knowledge base repository has the following structure:
    |- ...                       (And so on)
 ```
 
-The `README.md` file is a requirement of the Git tool.  It can be an empty, zero-byte file. 
+The `README.md` file is a requirement of the Git tool.  It can be an empty, zero-byte file.
 
 #### The assets directory
 
@@ -81,11 +81,7 @@ Each category has its own directory within a language directory.  The name of th
 
 Inside each category directory is a category file.  The name of the category file must be the name of the category with the extension `.md`.  The category file is a YAML-formatted file which contains one line that defines the title of the category to display in the knowledge base for the given language:
 
-   ```
-   ---
-   name: Basic Concepts
-   ---
-   ```
+![Example of category header](../../assets/manage-kb-1.png)
 
 Because each category in each language has its own category file, the title of the category in that language is specified here.
 
@@ -103,35 +99,22 @@ The `layout.yaml` file is a YAML-formatted list of categories.  Each block in th
 
 Article files have a short YAML header:
 
-```
----
-title: "Gestion des instances"
-slug: gestion-des-instances
----
-```
+![Example of article header](../../assets/manage-kb-2.png)
 
    - The `title` field defines what text appears in the category listings and on the top line of each article.
    - The `slug` field defines what path will display in the URL in the browser’s location bar.
 
 After the YAML header, the body of the article follows, and uses standard Markdown.  Images can be referenced in a regular reference using the path `/assets/filename`:
 
-```
-![User access control chart](/assets/rbac-roles-chart-en.png)
-```
+![Example of Markdown image reference](../../assets/manage-kb-3.png)
 
 Other knowledge base articles can be referenced as a regular link.  Use a relative path to reference an article in another category:
 
-```
-[Role-based access controls](../administration/rbac.md)
-```
+![Example of reference to article in another category](../../assets/manage-kb-4.png)
 
 Links to external content as well as HTML comments work as expected (the text within the comment will not appear in the Help Center):
 
-```
-[sandboxes](https://en.wikipedia.org/wiki/Sandbox_%28computer_security%29)
-
-<!-- This content has been deprecated -->
-```
+![Example of reference to external content and also HTML comments](../../assets/manage-kb-5.png)
 
 **Note:** The name of each article file *must* be identical in all languages, as specified in `layout.yaml`.  The name of the article displayed in the user interface will be taken from the contents of the article file.
 
