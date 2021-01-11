@@ -3,7 +3,7 @@ categories:
   icon: fa fa-info-circle
   articles:
       - cloud.ca-in-a-nutshell.md
-      - 10-noteworthy-improvements-in-the-new-cloud-ca-portal.md
+#      - 10-noteworthy-improvements-in-the-new-cloud-ca-portal.md
       - need-more-help.md
 - category: basic-concepts
   icon: fa fa-globe
