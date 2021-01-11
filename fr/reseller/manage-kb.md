@@ -81,12 +81,7 @@ Chaque catégorie a son propre répertoire dans un répertoire de langue. Le nom
 
 À l'intérieur de chaque répertoire de catégorie se trouve un fichier de catégorie. Le nom du fichier de catégorie doit être le nom de la catégorie avec l'extension `.md`. Le fichier de catégorie est un fichier au format YAML qui contient une ligne qui définit le titre de la catégorie à afficher dans la base de connaissances pour la langue donnée:
 
-   ```
-   ---
-   name: Basic Concepts
-   ---
-   ```
-
+![Exemple d'un en-tête d'une catégorie](../../assets/manage-kb-1.png)
 Parce que chaque catégorie dans chaque langue a son propre fichier de catégorie, le titre de la catégorie dans cette langue est spécifié ici.
 
 **Avis :** Le nom de chaque répertoire de catégorie *doit* être identique dans toutes les langues, comme spécifié dans `layout.yaml` (voir ci-dessous). Le nom de la catégorie affichée dans l'interface utilisateur sera extrait du contenu du fichier de catégorie.
@@ -103,35 +98,22 @@ Le fichier `layout.yaml` est une liste de catégories au format YAML. Chaque blo
 
 Les fichiers d'article ont un court en-tête YAML :
 
-```
----
-title: "Gestion des instances"
-slug: gestion-des-instances
----
-```
+![Exemple d'un en-tête d'un article](../../assets/manage-kb-2.png)
 
    - Le champ `title` définit le texte qui apparaît dans les listes de catégories et sur la première ligne de chaque article.
    - Le champ `slug` définit le chemin qui s'affichera dans l'URL dans la barre d'adresse du navigateur.
 
 Après l'en-tête YAML, le corps de l'article suit et utilise le Markdown standard. Les images peuvent être référencées dans une référence régulière en utilisant le chemin `/assets/nom-du-fichier` :
 
-```
-![User access control chart](/assets/rbac-roles-chart-en.png)
-```
+![Exemple d'une référence à une image en Markdown](../../assets/manage-kb-3.png)
 
 D'autres articles de la base de connaissances peuvent être référencés sous forme de lien régulier. Utilisez un chemin relatif pour référencer un article dans une autre catégorie :
 
-```
-[Role-based access controls](../administration/rbac.md)
-```
+![Exemple d'une référence à une article dans une autre catégorie](../../assets/manage-kb-4.png)
 
 Les liens vers le contenu externe ainsi que les commentaires HTML fonctionnent comme prévu (le texte du commentaire n'apparaîtra pas dans le Centre d'aide):
 
-```
-[sandboxes](https://en.wikipedia.org/wiki/Sandbox_%28computer_security%29)
-
-<!-- This content has been deprecated -->
-```
+![Exemples d'une référence à contenu externe et aussi d'une commentaire HTML](../../assets/manage-kb-5.png)
 
 **Avis :** Le nom de chaque fichier article *doit* être identique dans toutes les langues, comme spécifié dans `layout.yaml`. Le nom de l'article affiché dans l'interface utilisateur sera extrait du contenu du fichier article.
 
