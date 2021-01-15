@@ -4,6 +4,8 @@ slug: 10-noteworthy-improvements-in-the-new-cloudmc-portal
 ---
 
 
+<!-- Article has been deprecated -->
+
 We’ve been working on this portal update for a while now, and are truly excited to finally roll it out to our user base. Its evolution was in part driven by customer feedback and requests, and in part driven by a desire to make the UI simpler and more efficient, wherever possible.
 
 Beyond its fresh look, here are some of the key improvements you should take note of, as you explore our new interface:
