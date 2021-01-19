@@ -6,11 +6,11 @@ slug: utiliser-les-environnements-pour-compartimenter-les-charges-de-travail-et-
 
 ## Survol des environnements
 
-CloudMC offre un mécanisme puissant, les **environnements**, afin de ségréger les ressources et les charges de travail, et contrôler l'accès à celles-ci. Un cas d'utilisation commun est l'isolation des charges de travail de production et des systèmes en développement, ou encore la création de [carrés de sable](https://fr.wikipedia.org/wiki/Sandbox_%28s%C3%A9curit%C3%A9_informatique%29) spécifiques à certains projets.
+La plateforme offre un mécanisme puissant, les **environnements**, afin de ségréger les ressources et les charges de travail, et contrôler l'accès à celles-ci. Un cas d'utilisation commun est l'isolation des charges de travail de production et des systèmes en développement, ou encore la création de [carrés de sable](https://fr.wikipedia.org/wiki/Sandbox_%28s%C3%A9curit%C3%A9_informatique%29) spécifiques à certains projets.
 
 Un environnement appartient à une organisation, est associé à un service (ex.: Calcul ou Stockage d'objet) et est composé d'un ensemble d'utilisateurs qui ont une visibilité sur des ressources communes (ex.: instances, stockage, etc).
 
-Bien que CloudMC mesure l'utilisation des services au niveau des organisations pour des fins de facturation, les ressources consommées par chaque environnement sont également mesurées indépendamment, ce qui permet au entreprises qui le désirent d'effectuer de la facturation interne par environnement.
+Bien que le système mesure l'utilisation des services au niveau des organisations pour des fins de facturation, les ressources consommées par chaque environnement sont également mesurées indépendamment, ce qui permet au entreprises qui le désirent d'effectuer de la facturation interne par environnement.
 
 Naviguez au service souhaité dans la barre latérale pour accéder à la page *Environnements*, où tous les environnements du service sélectionné sont répertoriés. De plus, lorsque vous travaillez à l'intérieur d'un environnement, le service et l'environnement actuels sont affichés en haut à gauche de la page. Cliquer sur ce bouton affichera une option pour revenir à la page *Environnements*, ou pour basculer vers un autre environnement.
 
@@ -34,13 +34,13 @@ Tout utilisateur ayant le rôle **Utilisateur**, ou toute autre rôle disposant 
     - N'ajoutez aucun utilisateur à votre environnement (cliquez sur *Sauter* pour passer à la page suivante)
 1. Pour tous les utilisateurs que vous avez ajoutés, sélectionnez un rôle d'environnement. Si vous avez activé la gestion automatique, sélectionnez un rôle d'environnement par défaut.
 1. Cliquez sur *Appliquer* pour valider les membres sélectionnés. Les utilisateurs seront ajoutés.
-1. Pour certains services, la page *Initialiser l'environnement* apparaîtra pendant un moment. Ici, vous pouvez :
+1. Pour certains services, la page *Initialiser l'environnement* apparaîtra pendant un moment. Les éléments de cette page sont spécifiques au service sur lequel l'environnement est créé.  Vous pouvez cliquer sur *Sauter* et de configurer l'environnement plus tard. <!-- Il faut déplace cela à une article pour CloudStack : Ici, vous pouvez :
     - Configurer un réseau isolé sans accès à aucun autre sous-réseau, ni à l'Internet public
     - Configurer un, deux ou trois VPCs. Voir [Qu'est-ce qu'un VPC](what-is-a-vpc.md) pour plus d'informations sur les VPC
     - Ne configurer aucun réseau (cliquez sur *Sauter* pour terminer la création de l'environnement)
 1. Si vous avez choisi de créer un ou plusieurs réseaux, entrez les paramètres demandés pour les réseaux à créer.
 1. Cliquez sur *Initialiser*.
-1. Les réseaux seront créés et vous retournerez à la page *Environnements*.
+1. Les réseaux seront créés et vous retournerez à la page *Environnements*. -->
 
 ### Gérer et supprimer un environnement
 
