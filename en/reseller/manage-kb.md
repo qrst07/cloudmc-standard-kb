@@ -139,3 +139,23 @@ When changes have been committed to the `master` branch of your repository, a sy
 [Font Awesome icons](https://fontawesome.com/v4.7.0/icons/)
 
 [List of ISO 639-1 codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+
+# Broken
+
+```
+![User access control chart](/assets/rbac-roles-chart-en.png)
+```
+
+Other knowledge base articles can be referenced as a regular link.  Use a relative path to reference an article in another category:
+
+```
+[Role-based access controls](../administration/rbac.md)
+```
+
+Links to external content as well as HTML comments work as expected (the text within the comment will not appear in the Help Center):
+
+```
+[sandboxes](https://en.wikipedia.org/wiki/Sandbox_%28computer_security%29)
+
+<!-- This content has been deprecated -->
+```
