@@ -84,6 +84,7 @@ categories:
       - rbac-use-cases-basic.md
       - rbac-use-cases-advanced.md
       - openid-connect.md
+      - manage-kb.md
 - category: how-to
   icon: fa fa-question
   articles:
