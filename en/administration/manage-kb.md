@@ -1,4 +1,8 @@
-# Manage the CloudMC knowledge base
+---
+title: "Manage the CloudMC knowledge base"
+slug: manage-kb
+---
+
 
 <!-- Need to add information about inheritance and branding. -->
 
@@ -65,7 +69,7 @@ CloudMC will search in the `assets` directory for images referenced from the art
 
 #### Languages
 
-CloudMC can be configured for multiple language support via the [Brand Management](branding.md) page.  For each enabled language, a top-level directory may be created in the knowledge base repository for content in that language.  The name of the directory must be the ISO 639-1 code for the language, in lower-case letters, for example, `en` for English, `fr` for French, or `es` for Spanish.
+CloudMC can be configured for multiple language support via the [Brand Management](../administration/brand.md) page.  For each enabled language, a top-level directory may be created in the knowledge base repository for content in that language.  The name of the directory must be the ISO 639-1 code for the language, in lower-case letters, for example, `en` for English, `fr` for French, or `es` for Spanish.
 
 If an enabled language does not have a top-level directory in the repository, content will not appear for that language in the Help Center.
 
@@ -77,7 +81,7 @@ Each category has its own directory within a language directory.  The name of th
 
 Inside each category directory is a category file.  The name of the category file must be the name of the category with the extension `.md`.  The category file is a YAML-formatted file which contains one line that defines the title of the category to display in the knowledge base for the given language:
 
-![Example of category header](manage-kb-1.png)
+![Example of category header](../../assets/manage-kb-1.png)
 
 Because each category in each language has its own category file, the title of the category in that language is specified here.
 
@@ -95,26 +99,24 @@ The `layout.yaml` file is a YAML-formatted list of categories.  Each block in th
 
 Article files have a short YAML header:
 
-![Example of article header](manage-kb-2.png)
+![Example of article header](../../assets/manage-kb-2.png)
 
    - The `title` field defines what text appears in the category listings and on the top line of each article.
    - The `slug` field defines what path will display in the URL in the browser’s location bar.
 
-**Note:** The name of each article file *must* be identical in all languages, as specified in `layout.yaml`.  The name of the article displayed in the user interface will be taken from the contents of the article file.
-
 After the YAML header, the body of the article follows, and uses standard Markdown.  Images can be referenced in a regular reference using the path `/assets/filename`:
 
-![Example of Markdown image reference](manage-kb-3.png)
+![Example of Markdown image reference](../../assets/manage-kb-3.png)
 
 Other knowledge base articles can be referenced as a regular link.  Use a relative path to reference an article in another category:
 
-![Example of reference to article in another category](manage-kb-4.png)
+![Example of reference to article in another category](../../assets/manage-kb-4.png)
 
-Links to external content as well as HTML comments work as expected.  Text within the HTML comment will not appear in the Help Center:
+Links to external content as well as HTML comments work as expected (the text within the comment will not appear in the Help Center):
 
-![Example of reference to external content and also HTML comments](manage-kb-5.png)
+![Example of reference to external content and also HTML comments](../../assets/manage-kb-5.png)
 
-If there is a need to display 
+**Note:** The name of each article file *must* be identical in all languages, as specified in `layout.yaml`.  The name of the article displayed in the user interface will be taken from the contents of the article file.
 
 ### Synchronizing with a repository
 
@@ -126,7 +128,7 @@ When changes have been committed to the `master` branch of your repository, a sy
 
 ### See also
 
-[Brand Management](branding.md)
+[Brand Management](../administration/branding.md)
 
 ### External links
 
@@ -137,3 +139,23 @@ When changes have been committed to the `master` branch of your repository, a sy
 [Font Awesome icons](https://fontawesome.com/v4.7.0/icons/)
 
 [List of ISO 639-1 codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+
+# Broken
+
+```
+!$[User access control chart](/assets/rbac-roles-chart-en.png)
+```
+
+Other knowledge base articles can be referenced as a regular link.  Use a relative path to reference an article in another category:
+
+```
+$[Role-based access controls](../administration/rbac.md)
+```
+
+Links to external content as well as HTML comments work as expected (the text within the comment will not appear in the Help Center):
+
+```
+[sandboxes](https://en.wikipedia.org/wiki/Sandbox_%28computer_security%29)
+
+<!-- This content has been deprecated -->
+```
