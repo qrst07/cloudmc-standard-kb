@@ -107,3 +107,5 @@ categories:
       - cca-client-config-mac.md
       - cca-client-config-windows.md
       - cca-client-config-ubuntu.md
+- category: aws
+  icon: fa fa-code
