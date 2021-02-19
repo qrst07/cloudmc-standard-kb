@@ -1,4 +1,4 @@
 ---
 name: Documentation AWS
-url: https://docs.aws.amazon.com/fr_fr/
+url: https://docs.aws.amazon.com/en_us/
 ---
