@@ -109,3 +109,5 @@ categories:
       - cca-client-config-ubuntu.md
 - category: aws
   icon: fa fa-code
+  articles:
+      - aws-test.md
