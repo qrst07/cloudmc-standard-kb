@@ -1,4 +1,4 @@
 ---
-name: MacroMeta API Reference
+name: MacroMeta Documentation
 url: https://macrometa.dev/api/
 ---
