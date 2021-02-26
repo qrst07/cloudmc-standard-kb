@@ -1,4 +1,4 @@
 ---
-name: Documentación de AWS
-url: https://docs.aws.amazon.com/en_us/
+name: Documentación de MacroMeta
+url: https://macrometa.dev/api/
 ---
